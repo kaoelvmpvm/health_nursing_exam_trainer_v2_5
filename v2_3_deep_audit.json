@@ -1,0 +1,18 @@
+{
+  "version": "2.3.0",
+  "question_bank_total": 666,
+  "new_taipei_questions": 200,
+  "new_taipei_item_level_deep_explanations": 200,
+  "new_taipei_missing_deep": [],
+  "option_count_mismatches": [],
+  "deep_file_counts": {
+    "deep_items_112.js": 50,
+    "deep_items_113.js": 50,
+    "deep_items_114.js": 50,
+    "deep_items_115.js": 50
+  },
+  "generic_basic_explanation_visible_in_practice": false,
+  "cache_bust_version": "2.3.0",
+  "target_check": "H112_114151_49",
+  "target_has_source_note": true
+}

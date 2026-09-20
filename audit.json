@@ -1,0 +1,5629 @@
+[
+  {
+    "file": "exam-107906.html",
+    "item": 1,
+    "status": "included",
+    "id": "H111_107906_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 2,
+    "status": "included",
+    "id": "H111_107906_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 3,
+    "status": "included",
+    "id": "H111_107906_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 4,
+    "status": "included",
+    "id": "H111_107906_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 5,
+    "status": "included",
+    "id": "H111_107906_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 6,
+    "status": "included",
+    "id": "H111_107906_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 7,
+    "status": "included",
+    "id": "H111_107906_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 8,
+    "status": "context-or-malformed-excluded",
+    "answer": "C",
+    "text": "7. 林先生33歲,體檢報告總膽固醇280 mg∕dl,腰圍:88公分;空腹血糖:150mg∕dl;\n高密度脂蛋白膽固醇:42mg∕dl;血壓:130∕88mmHg;三酸甘油脂:120mg∕dl;血\n中尿素氮超標;GOT:100mu/ml,請問符合幾項代謝症候群的指標?"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 9,
+    "status": "included",
+    "id": "H111_107906_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 10,
+    "status": "included",
+    "id": "H111_107906_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 11,
+    "status": "included",
+    "id": "H111_107906_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 12,
+    "status": "included",
+    "id": "H111_107906_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 13,
+    "status": "included",
+    "id": "H111_107906_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 14,
+    "status": "included",
+    "id": "H111_107906_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 15,
+    "status": "included",
+    "id": "H111_107906_15",
+    "qno": 15,
+    "multi": true
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 16,
+    "status": "included",
+    "id": "H111_107906_16",
+    "qno": 16,
+    "multi": true
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 17,
+    "status": "included",
+    "id": "H111_107906_17",
+    "qno": 17,
+    "multi": true
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 18,
+    "status": "included",
+    "id": "H111_107906_18",
+    "qno": 18,
+    "multi": true
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 19,
+    "status": "non-choice/no-answer",
+    "text": "1.請在適當空格內填入答案,以完成安寧緩和醫療與預立醫療決定書之差異比較表"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 20,
+    "status": "non-choice/no-answer",
+    "text": "2"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "3"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "4"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "5"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "6"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "7"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "8"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "9"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "10"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "11"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "12"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "13"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 32,
+    "status": "non-choice/no-answer",
+    "text": "2.熱傷害的「急救二不」是指: (1) _________、 (2) _________。"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 33,
+    "status": "non-choice/no-answer",
+    "text": "3.憂鬱症患者的腦內神經傳遞物質血清素、正腎上腺素比常人偏低還是偏高? (1) _________ 。根據\n2013 年美國精神醫學會出版的 DSM-V 診斷手冊的重鬱症診斷標準:若出現以下症狀中的 "
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 34,
+    "status": "non-choice/no-answer",
+    "text": "4.衛生福利部國民健康署在 2018 年設計了「我的餐盤」均衡飲食菜單口訣為:\n(1)_________、(2) _________、(3) _________、\n(4) 飯跟蔬菜一樣多_______"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 35,
+    "status": "non-choice/no-answer",
+    "text": "5.愛滋防治應該落實 ABC 三原則:\n(1) _________、(2) _________、(3) _________。"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 36,
+    "status": "non-choice/no-answer",
+    "text": "二、名詞釋義(共13分)\n1.Only yes means yes。(3 分)"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 37,
+    "status": "non-choice/no-answer",
+    "text": "2.LGBTQ 代表各種同志族群單字的集合體,請簡要名詞定義。(10 分)"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 38,
+    "status": "non-choice/no-answer",
+    "text": "1.在失智症的分類上,大致可分為哪兩類?(4 分)"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 39,
+    "status": "non-choice/no-answer",
+    "text": "2.肺結核七分篩檢法包括那些?(10 分)"
+  },
+  {
+    "file": "exam-107906.html",
+    "item": 40,
+    "status": "non-choice/no-answer",
+    "text": "3.2030 消除愛滋,聯合國愛滋病規劃署(UNAIDA),預計於 2020 年達成「90-90-90」目標,再於 2030 年達成「95-95-95」目標。請問「95-95-95」目標是代表什麼?("
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 1,
+    "status": "included",
+    "id": "H111_109921_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 2,
+    "status": "included",
+    "id": "H111_109921_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 3,
+    "status": "included",
+    "id": "H111_109921_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 4,
+    "status": "included",
+    "id": "H111_109921_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 5,
+    "status": "included",
+    "id": "H111_109921_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 6,
+    "status": "included",
+    "id": "H111_109921_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 7,
+    "status": "included",
+    "id": "H111_109921_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 8,
+    "status": "included",
+    "id": "H111_109921_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 9,
+    "status": "included",
+    "id": "H111_109921_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 10,
+    "status": "included",
+    "id": "H111_109921_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 11,
+    "status": "included",
+    "id": "H111_109921_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 12,
+    "status": "included",
+    "id": "H111_109921_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 13,
+    "status": "included",
+    "id": "H111_109921_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 14,
+    "status": "included",
+    "id": "H111_109921_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 15,
+    "status": "included",
+    "id": "H111_109921_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 16,
+    "status": "included",
+    "id": "H111_109921_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 17,
+    "status": "included",
+    "id": "H111_109921_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 18,
+    "status": "included",
+    "id": "H111_109921_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 19,
+    "status": "included",
+    "id": "H111_109921_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 20,
+    "status": "included",
+    "id": "H111_109921_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 21,
+    "status": "included",
+    "id": "H111_109921_21",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 22,
+    "status": "included",
+    "id": "H111_109921_22",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 23,
+    "status": "included",
+    "id": "H111_109921_23",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 24,
+    "status": "included",
+    "id": "H111_109921_24",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 25,
+    "status": "included",
+    "id": "H111_109921_25",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 26,
+    "status": "included",
+    "id": "H111_109921_26",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 27,
+    "status": "included",
+    "id": "H111_109921_27",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 28,
+    "status": "included",
+    "id": "H111_109921_28",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 29,
+    "status": "included",
+    "id": "H111_109921_29",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 30,
+    "status": "included",
+    "id": "H111_109921_30",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "第貳部份:填充題\n說明:作答時請將答案依照順序寫在答案卷上。"
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 32,
+    "status": "non-choice/no-answer",
+    "text": "2. CPR+AED的口訣按順序為? ______、______、______、______、______、______。"
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 33,
+    "status": "non-choice/no-answer",
+    "text": "第參部份:簡答、申論或短文寫作題\n說明:作答時請將答案依照順序寫在答案卷上。"
+  },
+  {
+    "file": "exam-109921.html",
+    "item": 34,
+    "status": "non-choice/no-answer",
+    "text": "2. 公共衛生中的三段五級為何?請簡要說明並舉例。"
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 1,
+    "status": "included",
+    "id": "H112_114151_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 2,
+    "status": "included",
+    "id": "H112_114151_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 3,
+    "status": "included",
+    "id": "H112_114151_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 4,
+    "status": "included",
+    "id": "H112_114151_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 5,
+    "status": "included",
+    "id": "H112_114151_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 6,
+    "status": "included",
+    "id": "H112_114151_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 7,
+    "status": "included",
+    "id": "H112_114151_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 8,
+    "status": "included",
+    "id": "H112_114151_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 9,
+    "status": "included",
+    "id": "H112_114151_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 10,
+    "status": "included",
+    "id": "H112_114151_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 11,
+    "status": "included",
+    "id": "H112_114151_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 12,
+    "status": "included",
+    "id": "H112_114151_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 13,
+    "status": "included",
+    "id": "H112_114151_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 14,
+    "status": "included",
+    "id": "H112_114151_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 15,
+    "status": "included",
+    "id": "H112_114151_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 16,
+    "status": "included",
+    "id": "H112_114151_16",
+    "qno": 16,
+    "multi": true
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 17,
+    "status": "included",
+    "id": "H112_114151_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 18,
+    "status": "included",
+    "id": "H112_114151_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 19,
+    "status": "included",
+    "id": "H112_114151_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 20,
+    "status": "included",
+    "id": "H112_114151_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 21,
+    "status": "included",
+    "id": "H112_114151_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 22,
+    "status": "included",
+    "id": "H112_114151_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 23,
+    "status": "included",
+    "id": "H112_114151_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 24,
+    "status": "included",
+    "id": "H112_114151_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 25,
+    "status": "included",
+    "id": "H112_114151_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 26,
+    "status": "included",
+    "id": "H112_114151_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 27,
+    "status": "included",
+    "id": "H112_114151_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 28,
+    "status": "included",
+    "id": "H112_114151_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 29,
+    "status": "included",
+    "id": "H112_114151_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 30,
+    "status": "included",
+    "id": "H112_114151_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 31,
+    "status": "included",
+    "id": "H112_114151_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 32,
+    "status": "included",
+    "id": "H112_114151_32",
+    "qno": 32,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 33,
+    "status": "included",
+    "id": "H112_114151_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 34,
+    "status": "included",
+    "id": "H112_114151_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 35,
+    "status": "included",
+    "id": "H112_114151_35",
+    "qno": 35,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 36,
+    "status": "included",
+    "id": "H112_114151_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 37,
+    "status": "included",
+    "id": "H112_114151_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 38,
+    "status": "included",
+    "id": "H112_114151_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 39,
+    "status": "included",
+    "id": "H112_114151_39",
+    "qno": 39,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 40,
+    "status": "included",
+    "id": "H112_114151_40",
+    "qno": 40,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 41,
+    "status": "included",
+    "id": "H112_114151_41",
+    "qno": 41,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 42,
+    "status": "included",
+    "id": "H112_114151_42",
+    "qno": 42,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 43,
+    "status": "included",
+    "id": "H112_114151_43",
+    "qno": 43,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 44,
+    "status": "included",
+    "id": "H112_114151_44",
+    "qno": 44,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 45,
+    "status": "included",
+    "id": "H112_114151_45",
+    "qno": 45,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 46,
+    "status": "included",
+    "id": "H112_114151_46",
+    "qno": 46,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 47,
+    "status": "included",
+    "id": "H112_114151_47",
+    "qno": 47,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 48,
+    "status": "included",
+    "id": "H112_114151_48",
+    "qno": 48,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 49,
+    "status": "included",
+    "id": "H112_114151_49",
+    "qno": 49,
+    "multi": false
+  },
+  {
+    "file": "exam-114151.html",
+    "item": 50,
+    "status": "included",
+    "id": "H112_114151_50",
+    "qno": 50,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 1,
+    "status": "included",
+    "id": "H112_114475_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 2,
+    "status": "included",
+    "id": "H112_114475_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 3,
+    "status": "included",
+    "id": "H112_114475_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 4,
+    "status": "included",
+    "id": "H112_114475_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 5,
+    "status": "included",
+    "id": "H112_114475_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 6,
+    "status": "included",
+    "id": "H112_114475_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 7,
+    "status": "included",
+    "id": "H112_114475_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 8,
+    "status": "included",
+    "id": "H112_114475_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 9,
+    "status": "context-or-malformed-excluded",
+    "answer": "A",
+    "text": "題組:從 1982 年至今,癌症一直是十大死因榜首。2010 年衛福部開始推動四癌篩檢。自 2022 年 7 月 1 日起,開辦肺癌早期偵測計畫,提供高風險 族群低劑量電腦斷層檢查(LDCT)。請回答以下第 9-10 題:"
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 10,
+    "status": "included",
+    "id": "H112_114475_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 11,
+    "status": "non-choice/no-answer",
+    "text": "二、申論題 1. 請根據以下敘述回答下列題組:\n依據世界衛生組織指出,罹患慢性病每年造成全球 4,100 萬人死亡,相當於全球死亡人數的 71%。而代謝症候群的患者將比一般人有更高的機率得到慢性病。要"
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 12,
+    "status": "non-choice/no-answer",
+    "text": "(2).以下有 4 位個案健康檢查的結果:\nA 小姐:腰圍 82 公分、血糖 80 mg/dl、血壓 140/90mmHg、三酸甘油脂\n135 mg/dl、高密度膽固醇 48mg/dl\nB 先生:腰圍"
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 13,
+    "status": "non-choice/no-answer",
+    "text": "二、申論題\n1. 請根據以下敘述回答下列題組:\n依據世界衛生組織指出,罹患慢性病每年造成全球 4,100 萬人死亡相當於全球死亡人數的 71%。而代謝症候群的患者將比一般人有更高的機率得到慢性病。要是"
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 14,
+    "status": "non-choice/no-answer",
+    "text": "2.青青因晚起差點趕不上公車,匆忙地進入教室參加英文期中考,自認寫錯很多題,擔心期末成績完蛋了,請問青青如何運用 ABCDE 原則正 面思考 ? (15%)"
+  },
+  {
+    "file": "exam-114475.html",
+    "item": 15,
+    "status": "non-choice/no-answer",
+    "text": "3.2015 年聯合國宣布「2030 永續發展目標」(Sustainable Development Goals, SDGs),SDGs 包含 17 項核心目標,涵蓋了 169 項細項目標、230 項"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 1,
+    "status": "included",
+    "id": "H112_114716_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 2,
+    "status": "included",
+    "id": "H112_114716_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 3,
+    "status": "included",
+    "id": "H112_114716_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 4,
+    "status": "included",
+    "id": "H112_114716_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 5,
+    "status": "included",
+    "id": "H112_114716_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 6,
+    "status": "included",
+    "id": "H112_114716_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 7,
+    "status": "included",
+    "id": "H112_114716_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 8,
+    "status": "included",
+    "id": "H112_114716_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 9,
+    "status": "included",
+    "id": "H112_114716_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 10,
+    "status": "included",
+    "id": "H112_114716_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 11,
+    "status": "included",
+    "id": "H112_114716_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 12,
+    "status": "included",
+    "id": "H112_114716_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 13,
+    "status": "included",
+    "id": "H112_114716_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 14,
+    "status": "included",
+    "id": "H112_114716_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 15,
+    "status": "included",
+    "id": "H112_114716_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 16,
+    "status": "included",
+    "id": "H112_114716_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 17,
+    "status": "included",
+    "id": "H112_114716_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 18,
+    "status": "included",
+    "id": "H112_114716_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 19,
+    "status": "included",
+    "id": "H112_114716_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 20,
+    "status": "included",
+    "id": "H112_114716_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "一、填充題\n1.了解並做好選擇食物及食品的風險評估,有助於提升食品安全。風險評估4步驟依序為: (1)________、(2)_______、 (3)________及危害特性。"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "(3)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "2.善用「做決定」技巧,可以幫助自己做出正確選擇,其5步驟依序是:確認必須做決定、\n(1)_________、(2)_________、做出決定、(3)_________。"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "(3)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "3.政府補助的四癌篩檢,有(1)_________、乳癌、子宮頸癌和口腔癌,2022年7月開始,\n(2)_________也納入政府補助的行列。"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "4.由美國心臟學會(AHA)提出的生命之鍊(Out-of-hospital Chain of Survival),在目前最新版本生命之\n鏈增加為六環,請寫出生命之鏈Chain of Survival的"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "(3)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 32,
+    "status": "non-choice/no-answer",
+    "text": "(4)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 33,
+    "status": "non-choice/no-answer",
+    "text": "(5)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 34,
+    "status": "non-choice/no-answer",
+    "text": "(6)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 35,
+    "status": "non-choice/no-answer",
+    "text": "5.從流行病學的致病模式來看傳染病的發生,致病三要素:(1)_________、(2)_________、(3)_________。"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 36,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 37,
+    "status": "non-choice/no-answer",
+    "text": "(3)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 38,
+    "status": "non-choice/no-answer",
+    "text": "二、問答題\n1.安眠藥是常見的成癮處方藥物,其容易產生「耐受性」、「心理依賴」及「生理依賴」,請說明其特性。(6分)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 39,
+    "status": "non-choice/no-answer",
+    "text": "2.因應COVID-19疫情,疾病管制署通函各醫療院所,確實詢問並記錄落實「TOCC」機制,請問\n「TOCC」是指?(4分)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 40,
+    "status": "non-choice/no-answer",
+    "text": "3.請解釋心理學家羅伯特·史坦伯格(Robert Jeffrey Sternberg)提出的「愛情三角理論」。(6分)"
+  },
+  {
+    "file": "exam-114716.html",
+    "item": 41,
+    "status": "non-choice/no-answer",
+    "text": "4.何謂「代謝症候群」?如何判定?(10分)"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 1,
+    "status": "included",
+    "id": "H113_119671_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 2,
+    "status": "included",
+    "id": "H113_119671_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 3,
+    "status": "included",
+    "id": "H113_119671_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 4,
+    "status": "included",
+    "id": "H113_119671_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 5,
+    "status": "included",
+    "id": "H113_119671_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 6,
+    "status": "included",
+    "id": "H113_119671_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 7,
+    "status": "context-or-malformed-excluded",
+    "answer": "A",
+    "text": "題組 7-9 題:健智和康明是好友,相約去聽演唱會,結果康明遲到 20 分鐘"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 8,
+    "status": "included",
+    "id": "H113_119671_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 9,
+    "status": "included",
+    "id": "H113_119671_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 10,
+    "status": "included",
+    "id": "H113_119671_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 11,
+    "status": "included",
+    "id": "H113_119671_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 12,
+    "status": "included",
+    "id": "H113_119671_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 13,
+    "status": "included",
+    "id": "H113_119671_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 14,
+    "status": "included",
+    "id": "H113_119671_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 15,
+    "status": "included",
+    "id": "H113_119671_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 16,
+    "status": "included",
+    "id": "H113_119671_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 17,
+    "status": "included",
+    "id": "H113_119671_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 18,
+    "status": "included",
+    "id": "H113_119671_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 19,
+    "status": "included",
+    "id": "H113_119671_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 20,
+    "status": "included",
+    "id": "H113_119671_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "1.骨骼肌肉受傷時的 PRICE 原則,分別表示:(1)________ 、(2)________、(3)________、(4)________、(5)________。"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "2.目前臺灣及全世界對於愛滋病防治策略共識為 U=U,是指:(6)________ (7)________。"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "3.心理學家Prochaska & Diclemente認為行為改變的六個階段:(8)________、意圖期、 (9)________、行動期、(10)________、復發期。"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "4.事故傷害發生的原因中,常見5個的人為因素:(11)________、不熟練的技術、(12)________________、(13)________、環境中隱伏的危機"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "5.「藥害救濟」制度,依據藥害發生的嚴重程度,可分為3種類別:死亡、(14)________、(15)________。"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "1. 2018 年,聯合國教育科學及文化組織(UNESCO)公布了新版《國際性教育技術指導綱要》將全面性教育定義為:\n全面性教育(Comprehensive Sexuality Education,C"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "2. 月經是生理女性每個月都會經歷一次的生理現象,在成長過程中有不少女性因月經而承受身心\n的痛苦,隨著性別議題受到重視,近十年來世界各國相繼提出「月經平權」的概念。教育部也\n於 112 學年實施校園提"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "3. 為了讓民眾安心使用食物,政府推動「食安五環」政策,請問食安五環指的是什麼? (5 分)"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "4. 為因應新流感大流行的問題,疾病管制局提出了「四大策略,五道防線」的防治策略,請寫出\n四大策略為何?五道防線為何?(9 分)"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "5. 請解釋物質成癮的定義。(4 分)"
+  },
+  {
+    "file": "exam-119671.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "1.以下是一則廣告,讓我們來進行媒體識讀\n請從消費者的立場,就「批判性思考」的四個層面:深度(對事情複雜性的了解)、廣度(從多元角\n度切入)、邏輯性(概念是否有意義、連結順序是否合理)、重要性(能指出"
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 1,
+    "status": "included",
+    "id": "H113_119681_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 2,
+    "status": "included",
+    "id": "H113_119681_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 3,
+    "status": "included",
+    "id": "H113_119681_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 4,
+    "status": "included",
+    "id": "H113_119681_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 5,
+    "status": "included",
+    "id": "H113_119681_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 6,
+    "status": "included",
+    "id": "H113_119681_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 7,
+    "status": "included",
+    "id": "H113_119681_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 8,
+    "status": "included",
+    "id": "H113_119681_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 9,
+    "status": "included",
+    "id": "H113_119681_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 10,
+    "status": "included",
+    "id": "H113_119681_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 11,
+    "status": "included",
+    "id": "H113_119681_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 12,
+    "status": "included",
+    "id": "H113_119681_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 13,
+    "status": "included",
+    "id": "H113_119681_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 14,
+    "status": "included",
+    "id": "H113_119681_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 15,
+    "status": "included",
+    "id": "H113_119681_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 16,
+    "status": "included",
+    "id": "H113_119681_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 17,
+    "status": "included",
+    "id": "H113_119681_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 18,
+    "status": "included",
+    "id": "H113_119681_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 19,
+    "status": "included",
+    "id": "H113_119681_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 20,
+    "status": "included",
+    "id": "H113_119681_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 21,
+    "status": "included",
+    "id": "H113_119681_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 22,
+    "status": "included",
+    "id": "H113_119681_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 23,
+    "status": "included",
+    "id": "H113_119681_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 24,
+    "status": "included",
+    "id": "H113_119681_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 25,
+    "status": "included",
+    "id": "H113_119681_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 26,
+    "status": "included",
+    "id": "H113_119681_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 27,
+    "status": "included",
+    "id": "H113_119681_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 28,
+    "status": "included",
+    "id": "H113_119681_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 29,
+    "status": "included",
+    "id": "H113_119681_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 30,
+    "status": "included",
+    "id": "H113_119681_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 31,
+    "status": "included",
+    "id": "H113_119681_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 32,
+    "status": "included",
+    "id": "H113_119681_32",
+    "qno": 32,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 33,
+    "status": "included",
+    "id": "H113_119681_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 34,
+    "status": "included",
+    "id": "H113_119681_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 35,
+    "status": "included",
+    "id": "H113_119681_35",
+    "qno": 35,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 36,
+    "status": "included",
+    "id": "H113_119681_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 37,
+    "status": "included",
+    "id": "H113_119681_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 38,
+    "status": "included",
+    "id": "H113_119681_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 39,
+    "status": "included",
+    "id": "H113_119681_39",
+    "qno": 39,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 40,
+    "status": "included",
+    "id": "H113_119681_40",
+    "qno": 40,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 41,
+    "status": "included",
+    "id": "H113_119681_41",
+    "qno": 41,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 42,
+    "status": "included",
+    "id": "H113_119681_42",
+    "qno": 42,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 43,
+    "status": "included",
+    "id": "H113_119681_43",
+    "qno": 43,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 44,
+    "status": "included",
+    "id": "H113_119681_44",
+    "qno": 44,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 45,
+    "status": "included",
+    "id": "H113_119681_45",
+    "qno": 45,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 46,
+    "status": "included",
+    "id": "H113_119681_46",
+    "qno": 46,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 47,
+    "status": "included",
+    "id": "H113_119681_47",
+    "qno": 47,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 48,
+    "status": "included",
+    "id": "H113_119681_48",
+    "qno": 48,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 49,
+    "status": "included",
+    "id": "H113_119681_49",
+    "qno": 49,
+    "multi": false
+  },
+  {
+    "file": "exam-119681.html",
+    "item": 50,
+    "status": "included",
+    "id": "H113_119681_50",
+    "qno": 50,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 1,
+    "status": "included",
+    "id": "H113_119850_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 2,
+    "status": "context-or-malformed-excluded",
+    "answer": "D",
+    "text": "2~5 題為題組\n宋小美是高中一年級的女學生, 平時不愛運動、常熬夜,喜歡吃炸雞、喝奶茶及泡麵,她的健康檢查 報告表如右。"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 3,
+    "status": "included",
+    "id": "H113_119850_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 4,
+    "status": "included",
+    "id": "H113_119850_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 5,
+    "status": "included",
+    "id": "H113_119850_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 6,
+    "status": "included",
+    "id": "H113_119850_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 7,
+    "status": "included",
+    "id": "H113_119850_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 8,
+    "status": "included",
+    "id": "H113_119850_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 9,
+    "status": "included",
+    "id": "H113_119850_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 10,
+    "status": "included",
+    "id": "H113_119850_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 11,
+    "status": "included",
+    "id": "H113_119850_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 12,
+    "status": "included",
+    "id": "H113_119850_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 13,
+    "status": "included",
+    "id": "H113_119850_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 14,
+    "status": "included",
+    "id": "H113_119850_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 15,
+    "status": "included",
+    "id": "H113_119850_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 16,
+    "status": "included",
+    "id": "H113_119850_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 17,
+    "status": "included",
+    "id": "H113_119850_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 18,
+    "status": "included",
+    "id": "H113_119850_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 19,
+    "status": "included",
+    "id": "H113_119850_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 20,
+    "status": "included",
+    "id": "H113_119850_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "1. Walker 等人於 1987 提出「健康促進生活型態」概念以維持並增進健康,\n其包含:運動休閒及(1) ________ 、(2)________ 、(3)________ 、\n(4)____"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "2. 衛生福利部及教育部共同推動「愛滋病防治 ABCD 原則」,降低 HIV 感染風\n險,其包括 A:拒絕性誘惑、_________________________________。"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "3. 「愛的語言」,是傳遞情意、增進親密關係的方法。 《愛之語》作者蓋\n瑞.巧門(Gary Chapman)提出五種「愛的語言」, 包括:接受禮物、(1)\n________ 、 (2) _______"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "4. 依據《毒品危害防制條例》,「毒品」依其 (1) ________、(2) ________及(3)\n________可分成四級,其分級及品項,由委員會每三個月定期檢討、\n\n增減。"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "5. 世界衛生組織(WHO)將每年的 5 月 5 日訂為世界手部衛生日,呼籲全球響應\n手部衛生,衛生福利部建議一般民眾落實正確洗手的 5 時機,包括吃東西\n前、(1) ________、上廁所後、擤鼻"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "6. 「批判性思考」能強化個人思維能力,全面看待各類事情。進行「批判性\n思考」生活技能的四步驟,依序是:質疑、(1) _________________________。"
+  },
+  {
+    "file": "exam-119850.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "7. 健康與體育領綱第五學習階段加深加廣選修課程之模組全名為:\n(1) ________,共分為運動與健康、(2) ________及健康\n與休閒生活等三個科目。"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 1,
+    "status": "included",
+    "id": "H113_120152_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 2,
+    "status": "included",
+    "id": "H113_120152_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 3,
+    "status": "included",
+    "id": "H113_120152_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 4,
+    "status": "included",
+    "id": "H113_120152_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 5,
+    "status": "included",
+    "id": "H113_120152_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 6,
+    "status": "included",
+    "id": "H113_120152_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 7,
+    "status": "included",
+    "id": "H113_120152_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 8,
+    "status": "included",
+    "id": "H113_120152_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 9,
+    "status": "included",
+    "id": "H113_120152_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 10,
+    "status": "included",
+    "id": "H113_120152_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 11,
+    "status": "included",
+    "id": "H113_120152_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 12,
+    "status": "included",
+    "id": "H113_120152_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 13,
+    "status": "included",
+    "id": "H113_120152_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 14,
+    "status": "included",
+    "id": "H113_120152_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 15,
+    "status": "included",
+    "id": "H113_120152_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 16,
+    "status": "included",
+    "id": "H113_120152_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 17,
+    "status": "included",
+    "id": "H113_120152_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 18,
+    "status": "included",
+    "id": "H113_120152_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 19,
+    "status": "included",
+    "id": "H113_120152_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 20,
+    "status": "included",
+    "id": "H113_120152_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 21,
+    "status": "included",
+    "id": "H113_120152_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 22,
+    "status": "included",
+    "id": "H113_120152_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 23,
+    "status": "included",
+    "id": "H113_120152_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 24,
+    "status": "included",
+    "id": "H113_120152_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 25,
+    "status": "context-or-malformed-excluded",
+    "answer": "D",
+    "text": "◎依據國民健康署調查結果顯示,40歲以上國人三高(高血壓、高血脂及高血糖)盛行率隨年齡而增加,且65歲之後同時罹患2種或2種以上慢性病的人數上升許多,因此,除了鼓勵民眾養成良好的生活習慣,戒除菸、檳、酒的行為外,定期健康檢查亦相當重要,一旦發現異狀,不相信偏方,應盡早就醫處理。"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 26,
+    "status": "included",
+    "id": "H113_120152_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 27,
+    "status": "included",
+    "id": "H113_120152_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 28,
+    "status": "included",
+    "id": "H113_120152_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 29,
+    "status": "context-or-malformed-excluded",
+    "answer": "E",
+    "text": "◎東榮是一17歲男生,今年高三,身高180公分,體重100公斤,因準備大學考試,每天晚上讀書至10點就會肚子餓而吃消夜,最近東榮感覺非常疲憊,且時常感到頭痛、胸悶、呼吸不順,請回答以下問題:"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 30,
+    "status": "included",
+    "id": "H113_120152_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 31,
+    "status": "included",
+    "id": "H113_120152_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 32,
+    "status": "context-or-malformed-excluded",
+    "answer": "B",
+    "text": "◎廷蓮是高一女生,身高165公分,體重52公斤,時常抱怨自己太胖,為了讓自己再瘦一點,\n嘗試過減肥藥、催吐等方式來減重,對於自己的體重時常感到焦慮。請回答以下問題:"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 33,
+    "status": "included",
+    "id": "H113_120152_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 34,
+    "status": "included",
+    "id": "H113_120152_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 35,
+    "status": "context-or-malformed-excluded",
+    "answer": "E",
+    "text": "◎小莉今年高三,某天在學校晚自習結束後,獨自走回家。途中,被一位帶著口罩,年約四十歲的男性歹徒尾隨。這位男性等到人煙較少的街區,將她拉至街角暗巷,企圖撕裂其衣物,小莉強烈感受到驚恐與威脅...。"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 36,
+    "status": "included",
+    "id": "H113_120152_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 37,
+    "status": "included",
+    "id": "H113_120152_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 38,
+    "status": "included",
+    "id": "H113_120152_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 39,
+    "status": "included",
+    "id": "H113_120152_39",
+    "qno": 39,
+    "multi": true
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 40,
+    "status": "included",
+    "id": "H113_120152_40",
+    "qno": 40,
+    "multi": true
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 41,
+    "status": "non-choice/no-answer",
+    "text": "1. 世界衛生組織推動都治計畫(directly observed treatment short-course, DOTs)由都治關懷員執行哪三步驟: (6分)\n________ 、________"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 42,
+    "status": "non-choice/no-answer",
+    "text": "2. 疼痛評估常用口訣PQRST,分別代表什麼?(5分)\n________ 、________ 、________ 、________ 、"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 43,
+    "status": "non-choice/no-answer",
+    "text": "3. 負責的性愛三部曲 ABC,分別代表什麼?(6分)\n________ 、________ 、________"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 44,
+    "status": "non-choice/no-answer",
+    "text": "4. 綠色消費的基本3R3E原則為?(6分 )\n________ 、________ 、________"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 45,
+    "status": "non-choice/no-answer",
+    "text": "5. 為周全孕期照護,我國政府於2021年7月開始擴大產檢次數及項目,將原本提供10次產前檢查增加至 次。(3分)"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 46,
+    "status": "non-choice/no-answer",
+    "text": "1. 對於突發性心跳停止,美國心臟學會有提出生命之鏈,請說明其中6環與其步驟中重要口訣? (10分)"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 47,
+    "status": "non-choice/no-answer",
+    "text": "2. 試說明Rowe & Kahn(1997)定義成功老化包含三個要件以及世界衛生組織提出活躍老化的定義?(10分)"
+  },
+  {
+    "file": "exam-120152.html",
+    "item": 48,
+    "status": "non-choice/no-answer",
+    "text": "3. 臺灣菸害防制法於112年3月22日修正施行,請問本次修正重點有哪些? (10分)"
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 1,
+    "status": "included",
+    "id": "H114_126814_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 2,
+    "status": "included",
+    "id": "H114_126814_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 3,
+    "status": "included",
+    "id": "H114_126814_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 4,
+    "status": "included",
+    "id": "H114_126814_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 5,
+    "status": "included",
+    "id": "H114_126814_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 6,
+    "status": "included",
+    "id": "H114_126814_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 7,
+    "status": "included",
+    "id": "H114_126814_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 8,
+    "status": "included",
+    "id": "H114_126814_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 9,
+    "status": "included",
+    "id": "H114_126814_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 10,
+    "status": "included",
+    "id": "H114_126814_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 11,
+    "status": "included",
+    "id": "H114_126814_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 12,
+    "status": "included",
+    "id": "H114_126814_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 13,
+    "status": "included",
+    "id": "H114_126814_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 14,
+    "status": "included",
+    "id": "H114_126814_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 15,
+    "status": "included",
+    "id": "H114_126814_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 16,
+    "status": "included",
+    "id": "H114_126814_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 17,
+    "status": "included",
+    "id": "H114_126814_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 18,
+    "status": "included",
+    "id": "H114_126814_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 19,
+    "status": "included",
+    "id": "H114_126814_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 20,
+    "status": "included",
+    "id": "H114_126814_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 21,
+    "status": "included",
+    "id": "H114_126814_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 22,
+    "status": "included",
+    "id": "H114_126814_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 23,
+    "status": "included",
+    "id": "H114_126814_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 24,
+    "status": "included",
+    "id": "H114_126814_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 25,
+    "status": "included",
+    "id": "H114_126814_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 26,
+    "status": "included",
+    "id": "H114_126814_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 27,
+    "status": "included",
+    "id": "H114_126814_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 28,
+    "status": "included",
+    "id": "H114_126814_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 29,
+    "status": "included",
+    "id": "H114_126814_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 30,
+    "status": "included",
+    "id": "H114_126814_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 31,
+    "status": "included",
+    "id": "H114_126814_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 32,
+    "status": "included",
+    "id": "H114_126814_32",
+    "qno": 32,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 33,
+    "status": "included",
+    "id": "H114_126814_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 34,
+    "status": "included",
+    "id": "H114_126814_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 35,
+    "status": "included",
+    "id": "H114_126814_35",
+    "qno": 35,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 36,
+    "status": "included",
+    "id": "H114_126814_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 37,
+    "status": "included",
+    "id": "H114_126814_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 38,
+    "status": "included",
+    "id": "H114_126814_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 39,
+    "status": "included",
+    "id": "H114_126814_39",
+    "qno": 39,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 40,
+    "status": "included",
+    "id": "H114_126814_40",
+    "qno": 40,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 41,
+    "status": "included",
+    "id": "H114_126814_41",
+    "qno": 41,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 42,
+    "status": "included",
+    "id": "H114_126814_42",
+    "qno": 42,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 43,
+    "status": "included",
+    "id": "H114_126814_43",
+    "qno": 43,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 44,
+    "status": "included",
+    "id": "H114_126814_44",
+    "qno": 44,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 45,
+    "status": "included",
+    "id": "H114_126814_45",
+    "qno": 45,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 46,
+    "status": "included",
+    "id": "H114_126814_46",
+    "qno": 46,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 47,
+    "status": "included",
+    "id": "H114_126814_47",
+    "qno": 47,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 48,
+    "status": "included",
+    "id": "H114_126814_48",
+    "qno": 48,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 49,
+    "status": "included",
+    "id": "H114_126814_49",
+    "qno": 49,
+    "multi": false
+  },
+  {
+    "file": "exam-126814.html",
+    "item": 50,
+    "status": "included",
+    "id": "H114_126814_50",
+    "qno": 50,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 1,
+    "status": "included",
+    "id": "H114_126898_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 2,
+    "status": "included",
+    "id": "H114_126898_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 3,
+    "status": "included",
+    "id": "H114_126898_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 4,
+    "status": "included",
+    "id": "H114_126898_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 5,
+    "status": "included",
+    "id": "H114_126898_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 6,
+    "status": "included",
+    "id": "H114_126898_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 7,
+    "status": "included",
+    "id": "H114_126898_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 8,
+    "status": "included",
+    "id": "H114_126898_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 9,
+    "status": "included",
+    "id": "H114_126898_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 10,
+    "status": "included",
+    "id": "H114_126898_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 11,
+    "status": "included",
+    "id": "H114_126898_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 12,
+    "status": "included",
+    "id": "H114_126898_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 13,
+    "status": "included",
+    "id": "H114_126898_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 14,
+    "status": "included",
+    "id": "H114_126898_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 15,
+    "status": "included",
+    "id": "H114_126898_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 16,
+    "status": "included",
+    "id": "H114_126898_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 17,
+    "status": "included",
+    "id": "H114_126898_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 18,
+    "status": "included",
+    "id": "H114_126898_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 19,
+    "status": "included",
+    "id": "H114_126898_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 20,
+    "status": "included",
+    "id": "H114_126898_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "一、填充題\n1.容易造成熱傷害的 6 大危險族群為 (1)________ 、(2)________、(3)________、(4)________、(5)________、(6)________。"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "(2)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "(3)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "(4)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "(5)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "(6)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "2.傳染病防治法所稱傳染病依(7)________、(8)________及(9)________等危害風險程度高低分成 五類傳染病。"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "(8)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "(9)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "3.依毒品危害防制條例所稱毒品,指具有成癮性、(10)________、(11)________ 之麻醉藥品與 其製品及影響精神物質與其製品。"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "(11)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 32,
+    "status": "non-choice/no-answer",
+    "text": "4.常見的成癮性處方藥物有哪些? (12)________ 、(13)________、(14)________、(15)________。"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 33,
+    "status": "non-choice/no-answer",
+    "text": "(13)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 34,
+    "status": "non-choice/no-answer",
+    "text": "(14)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 35,
+    "status": "non-choice/no-answer",
+    "text": "(15)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 36,
+    "status": "non-choice/no-answer",
+    "text": "二、問答題\n1.『Me Too』源起於 2017 年 10 月美國哈維·溫斯坦(Harvey Weinstein)性侵事件後在社交媒體上 廣泛傳播的主題標籤,於 2018 年 3 月散播至臺灣,多個團"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 37,
+    "status": "non-choice/no-answer",
+    "text": "(2)提出說明有哪些情況,因為不符合必須在雙方「意識完全清楚」「自願地」「主動」參與性行為相關活動,不適用「Only YES means YES 沒有同意,就是性侵」的原則?(5 分)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 38,
+    "status": "non-choice/no-answer",
+    "text": "(3)當遭遇性侵害時,如何進行危機因應處置?(7 分)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 39,
+    "status": "non-choice/no-answer",
+    "text": "2.請列出正向思考的 ABCDE 原則,並舉例說明。(5 分)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 40,
+    "status": "non-choice/no-answer",
+    "text": "3.請列出十二年國民基本教育課程綱要健康與體育領域之「健康與護理」學習內容的六大主題?(6 分)"
+  },
+  {
+    "file": "exam-126898.html",
+    "item": 41,
+    "status": "non-choice/no-answer",
+    "text": "4.2023 年台灣 MeToo 運動從政壇延燒到包括學術與藝文各界,除了揭示和抗議性別暴力、性騷擾 和性侵害外,受害者可能出現 PTSD,請解釋 PTSD 其定義及常見的四大症狀?(5 分)"
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 1,
+    "status": "included",
+    "id": "H114_127400_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 2,
+    "status": "included",
+    "id": "H114_127400_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 3,
+    "status": "included",
+    "id": "H114_127400_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 4,
+    "status": "included",
+    "id": "H114_127400_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 5,
+    "status": "included",
+    "id": "H114_127400_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 6,
+    "status": "included",
+    "id": "H114_127400_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 7,
+    "status": "included",
+    "id": "H114_127400_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 8,
+    "status": "included",
+    "id": "H114_127400_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 9,
+    "status": "included",
+    "id": "H114_127400_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 10,
+    "status": "included",
+    "id": "H114_127400_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 11,
+    "status": "included",
+    "id": "H114_127400_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 12,
+    "status": "included",
+    "id": "H114_127400_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 13,
+    "status": "included",
+    "id": "H114_127400_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 14,
+    "status": "included",
+    "id": "H114_127400_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 15,
+    "status": "included",
+    "id": "H114_127400_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 16,
+    "status": "included",
+    "id": "H114_127400_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 17,
+    "status": "included",
+    "id": "H114_127400_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 18,
+    "status": "included",
+    "id": "H114_127400_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 19,
+    "status": "included",
+    "id": "H114_127400_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 20,
+    "status": "included",
+    "id": "H114_127400_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 21,
+    "status": "included",
+    "id": "H114_127400_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 22,
+    "status": "included",
+    "id": "H114_127400_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 23,
+    "status": "context-or-malformed-excluded",
+    "answer": "B",
+    "text": "某前瞻性研究追蹤 200 名民眾,探討喝含糖飲料與肥胖發生的關聯。結果如下:"
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 24,
+    "status": "included",
+    "id": "H114_127400_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 25,
+    "status": "included",
+    "id": "H114_127400_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 26,
+    "status": "included",
+    "id": "H114_127400_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 27,
+    "status": "included",
+    "id": "H114_127400_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 28,
+    "status": "included",
+    "id": "H114_127400_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 29,
+    "status": "included",
+    "id": "H114_127400_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 30,
+    "status": "included",
+    "id": "H114_127400_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 31,
+    "status": "included",
+    "id": "H114_127400_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 32,
+    "status": "included",
+    "id": "H114_127400_32",
+    "qno": 32,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 33,
+    "status": "included",
+    "id": "H114_127400_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 34,
+    "status": "included",
+    "id": "H114_127400_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 35,
+    "status": "included",
+    "id": "H114_127400_35",
+    "qno": 35,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 36,
+    "status": "included",
+    "id": "H114_127400_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 37,
+    "status": "included",
+    "id": "H114_127400_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 38,
+    "status": "included",
+    "id": "H114_127400_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 39,
+    "status": "included",
+    "id": "H114_127400_39",
+    "qno": 39,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 40,
+    "status": "included",
+    "id": "H114_127400_40",
+    "qno": 40,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 41,
+    "status": "included",
+    "id": "H114_127400_41",
+    "qno": 41,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 42,
+    "status": "included",
+    "id": "H114_127400_42",
+    "qno": 42,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 43,
+    "status": "included",
+    "id": "H114_127400_43",
+    "qno": 43,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 44,
+    "status": "included",
+    "id": "H114_127400_44",
+    "qno": 44,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 45,
+    "status": "included",
+    "id": "H114_127400_45",
+    "qno": 45,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 46,
+    "status": "included",
+    "id": "H114_127400_46",
+    "qno": 46,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 47,
+    "status": "included",
+    "id": "H114_127400_47",
+    "qno": 47,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 48,
+    "status": "included",
+    "id": "H114_127400_48",
+    "qno": 48,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 49,
+    "status": "included",
+    "id": "H114_127400_49",
+    "qno": 49,
+    "multi": false
+  },
+  {
+    "file": "exam-127400.html",
+    "item": 50,
+    "status": "included",
+    "id": "H114_127400_50",
+    "qno": 50,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_138636_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_138636_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_138636_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_138636_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_138636_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_138636_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_138636_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_138636_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_138636_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_138636_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_138636_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_138636_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_138636_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_138636_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_138636_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_138636_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 17,
+    "status": "included",
+    "id": "H115_138636_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_138636_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 19,
+    "status": "included",
+    "id": "H115_138636_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 20,
+    "status": "included",
+    "id": "H115_138636_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 21,
+    "status": "included",
+    "id": "H115_138636_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 22,
+    "status": "included",
+    "id": "H115_138636_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 23,
+    "status": "included",
+    "id": "H115_138636_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 24,
+    "status": "included",
+    "id": "H115_138636_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 25,
+    "status": "included",
+    "id": "H115_138636_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 26,
+    "status": "included",
+    "id": "H115_138636_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "申論題\n1.十二年國民基本教育(108課綱)之健康領域,高度強調「素養導向」教學。為引導學生將健康知識轉化為實踐技能,除了運用多元教學法,更需仰賴具備建構性與互動性之教學策略。請針對下列四項教學策略,"
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "(2)探究教學法"
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "(3)體驗學習"
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "(4)情境學習"
+  },
+  {
+    "file": "exam-138636.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "2.2018年,聯合國教科文組織(UNESCO)發布修訂版《國際性教育技術指導綱要》,倡導「全面性教育」(CSE),並確立了八大核心概念。請論述此八大核心概念之具體內涵;同時,請舉出現行108課綱中「"
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_139191_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_139191_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_139191_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_139191_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_139191_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_139191_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_139191_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_139191_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_139191_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_139191_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_139191_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_139191_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_139191_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_139191_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_139191_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_139191_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 17,
+    "status": "included",
+    "id": "H115_139191_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_139191_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 19,
+    "status": "included",
+    "id": "H115_139191_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 20,
+    "status": "included",
+    "id": "H115_139191_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 21,
+    "status": "included",
+    "id": "H115_139191_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 22,
+    "status": "included",
+    "id": "H115_139191_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 23,
+    "status": "included",
+    "id": "H115_139191_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 24,
+    "status": "included",
+    "id": "H115_139191_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 25,
+    "status": "included",
+    "id": "H115_139191_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 26,
+    "status": "included",
+    "id": "H115_139191_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 27,
+    "status": "included",
+    "id": "H115_139191_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 28,
+    "status": "included",
+    "id": "H115_139191_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 29,
+    "status": "included",
+    "id": "H115_139191_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 30,
+    "status": "included",
+    "id": "H115_139191_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 31,
+    "status": "included",
+    "id": "H115_139191_31",
+    "qno": 31,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 32,
+    "status": "included",
+    "id": "H115_139191_32",
+    "qno": 32,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 33,
+    "status": "included",
+    "id": "H115_139191_33",
+    "qno": 33,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 34,
+    "status": "included",
+    "id": "H115_139191_34",
+    "qno": 34,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 35,
+    "status": "included",
+    "id": "H115_139191_35",
+    "qno": 35,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 36,
+    "status": "included",
+    "id": "H115_139191_36",
+    "qno": 36,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 37,
+    "status": "included",
+    "id": "H115_139191_37",
+    "qno": 37,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 38,
+    "status": "included",
+    "id": "H115_139191_38",
+    "qno": 38,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 39,
+    "status": "included",
+    "id": "H115_139191_39",
+    "qno": 39,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 40,
+    "status": "included",
+    "id": "H115_139191_40",
+    "qno": 40,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 41,
+    "status": "included",
+    "id": "H115_139191_41",
+    "qno": 41,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 42,
+    "status": "included",
+    "id": "H115_139191_42",
+    "qno": 42,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 43,
+    "status": "included",
+    "id": "H115_139191_43",
+    "qno": 43,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 44,
+    "status": "included",
+    "id": "H115_139191_44",
+    "qno": 44,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 45,
+    "status": "included",
+    "id": "H115_139191_45",
+    "qno": 45,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 46,
+    "status": "included",
+    "id": "H115_139191_46",
+    "qno": 46,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 47,
+    "status": "included",
+    "id": "H115_139191_47",
+    "qno": 47,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 48,
+    "status": "included",
+    "id": "H115_139191_48",
+    "qno": 48,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 49,
+    "status": "included",
+    "id": "H115_139191_49",
+    "qno": 49,
+    "multi": false
+  },
+  {
+    "file": "exam-139191.html",
+    "item": 50,
+    "status": "included",
+    "id": "H115_139191_50",
+    "qno": 50,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_139200_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_139200_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_139200_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_139200_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_139200_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_139200_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_139200_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_139200_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_139200_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_139200_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_139200_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_139200_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_139200_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_139200_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_139200_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_139200_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 17,
+    "status": "context-or-malformed-excluded",
+    "answer": "B",
+    "text": "◎敏敏16歲,高一女生,身高158公分,體重55公斤,因家中經濟因素,所以每天放學後會到餐廳端盤子打工至晚上11點,有時下班後會再跟同事一起去吃宵夜。明美最近覺得自己應該進行體位管理,請回答以下問題:"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_139200_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 19,
+    "status": "included",
+    "id": "H115_139200_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 20,
+    "status": "included",
+    "id": "H115_139200_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "一、 填充題\n1. 母乳提供___,可增加嬰兒的免疫能力。"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "2. 為避免約會強暴,赴約前,應確認STOP約會原則,S:安全、T:時間、___、___。"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "3. 依照毒品危害防制條例,毒品的分級是依其___、___及對社會的危害性分為四級。"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "二、解釋名詞:"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "2. 健康商數(Health Quotient)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "三、簡答題\n1. 請簡述如何以辛辛那提「FAST」的四個口訣,做中風症狀檢測。(8分)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "2. 請寫出健康體位教育的五大核心能力「85210」其數字代表何意義。(10分)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "3. 請寫出垃圾減量「6R」原則?(6分)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "4. 何謂「健康促進學校」?請說明。(3分)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "四、申論題\n1. 請敘述渥太華健康促進五大行動綱領,並舉例說明。(10分)"
+  },
+  {
+    "file": "exam-139200.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "2. 請以健康信念模式(Health Belief Model)理論,來說明如何應用在推動校園毒品防制活動?(12分)"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_139622_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_139622_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_139622_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_139622_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_139622_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_139622_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_139622_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_139622_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_139622_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_139622_10",
+    "qno": 10,
+    "multi": true
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_139622_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_139622_12",
+    "qno": 12,
+    "multi": true
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_139622_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_139622_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_139622_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_139622_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 17,
+    "status": "included",
+    "id": "H115_139622_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_139622_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 19,
+    "status": "non-choice/no-answer",
+    "text": "1. 世界衛生組織力薦結核病個案均應實施「都治計畫」(Directly Observed Treatment Short-Course, DOTS),是指關懷員執行(1) ______、(2) ___"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 20,
+    "status": "non-choice/no-answer",
+    "text": "2. 請寫出簡易辨識中風前兆的四步驟有哪些?\nF:(4) ______。\nA:(5) ______。\nS:(6) ______。\nT:(7) ______"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "3. 求職防騙三要、七不原則是?三要:(8) ______、要存疑、(9) ______;七不:不繳錢、(10) ______、(11) ______、不簽約、(12) ______、不飲用、(13)"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "4. 社會情緒學習(Social Emotional Learning, SEL)是近年備受肯定的教育議題,許多科目都將其融入課程,以培養學生情緒學習,而 SEL 具備五大內涵,包含:(14) ___"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "5. 愛滋病「防治原則ABC」即 A(Abstain)避免發生性行為、B(Be Faithful)忠實性伴侶、C(Condom)全程使用保險套。近年來加入了「D」的醫療介入原則來進行強化;這個D主要代"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "6. 癌症為國人十大死因之首,為了早期發現早期治療,衛生福利部國民健康署擴大六癌篩檢,請寫出哪六癌篩檢?(20) ______、(21) ______、(22) ______、(23) ______、"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "(簡答題) 1. 面對數位/網路性別暴力時,教師可以引導學生建立自我保護觀念,並認識預防「五不」原則。請說明「五不」原則。"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "(簡答題) 2. 不論是前幾年的Covid-19疫情抑或是每年都在發生的流感疫情,衛生福利部疾病管制署(CDC)都會提醒大眾務必在「高感染傳播風險場域」做好防疫措施,包含配戴口罩、注意咳嗽禮節...等"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "(簡答題) 3. 依據衛福部「健康九九」資料,目前人工流產可分為藥物流產與手術流產兩大類,且不同方式具有不同的適用懷孕週數。請說明目前「四種人工流產」方式,並分別寫出其「適用」的懷孕週數範圍"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "(簡答題) 4. 請寫出衛生福利部最新公布的長照3.0八大核心"
+  },
+  {
+    "file": "exam-139622.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "(簡答題) 5. 青少年手機過度使用已成普遍危機,易導致焦慮、憂鬱、注意力渙散及睡眠不足,甚至引發「手機恐懼症」。臺灣調查顯示約 54% 青少年有手機成癮風險,每日看螢幕時間長、睡前滑手機尤其危險,嚴"
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_140119_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_140119_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_140119_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_140119_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_140119_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_140119_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_140119_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_140119_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_140119_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_140119_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_140119_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_140119_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_140119_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_140119_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_140119_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_140119_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 17,
+    "status": "included",
+    "id": "H115_140119_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_140119_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 19,
+    "status": "included",
+    "id": "H115_140119_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 20,
+    "status": "included",
+    "id": "H115_140119_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 21,
+    "status": "included",
+    "id": "H115_140119_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 22,
+    "status": "included",
+    "id": "H115_140119_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 23,
+    "status": "included",
+    "id": "H115_140119_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 24,
+    "status": "included",
+    "id": "H115_140119_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 25,
+    "status": "included",
+    "id": "H115_140119_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "二、問答題\n1.請說明衛生福利部公告的六癌篩檢中,各為何種癌症與其篩檢項目。"
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "2.請敘述長照服務的四大核心項目。"
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "3. 2025 年美國心臟醫學會(AHA)發布了最新的 CPR 與急救指引,請分別針 對「嬰兒 CPR 壓胸」及「成人/兒童異物梗塞處理流程」的修正進行說明。"
+  },
+  {
+    "file": "exam-140119.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "三、申論題\n1.教育部推動「高級中等以下學校行動載具使用原則」修正案,強調學生數 位使用素養與人際互動品質之提升。若您擔任健護教師,發現班級學生因社 群軟體(如 LINE 群組)訊息誤解,引發同儕間排"
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 1,
+    "status": "included",
+    "id": "H115_140180_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 2,
+    "status": "included",
+    "id": "H115_140180_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 3,
+    "status": "included",
+    "id": "H115_140180_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 4,
+    "status": "included",
+    "id": "H115_140180_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 5,
+    "status": "included",
+    "id": "H115_140180_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 6,
+    "status": "included",
+    "id": "H115_140180_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 7,
+    "status": "included",
+    "id": "H115_140180_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 8,
+    "status": "included",
+    "id": "H115_140180_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 9,
+    "status": "included",
+    "id": "H115_140180_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 10,
+    "status": "included",
+    "id": "H115_140180_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 11,
+    "status": "included",
+    "id": "H115_140180_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 12,
+    "status": "included",
+    "id": "H115_140180_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 13,
+    "status": "included",
+    "id": "H115_140180_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 14,
+    "status": "included",
+    "id": "H115_140180_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 15,
+    "status": "included",
+    "id": "H115_140180_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 16,
+    "status": "included",
+    "id": "H115_140180_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 17,
+    "status": "included",
+    "id": "H115_140180_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 18,
+    "status": "included",
+    "id": "H115_140180_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 19,
+    "status": "included",
+    "id": "H115_140180_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 20,
+    "status": "included",
+    "id": "H115_140180_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 21,
+    "status": "included",
+    "id": "H115_140180_21",
+    "qno": 21,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 22,
+    "status": "included",
+    "id": "H115_140180_22",
+    "qno": 22,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 23,
+    "status": "included",
+    "id": "H115_140180_23",
+    "qno": 23,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 24,
+    "status": "included",
+    "id": "H115_140180_24",
+    "qno": 24,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 25,
+    "status": "included",
+    "id": "H115_140180_25",
+    "qno": 25,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 26,
+    "status": "included",
+    "id": "H115_140180_26",
+    "qno": 26,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 27,
+    "status": "included",
+    "id": "H115_140180_27",
+    "qno": 27,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 28,
+    "status": "included",
+    "id": "H115_140180_28",
+    "qno": 28,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 29,
+    "status": "included",
+    "id": "H115_140180_29",
+    "qno": 29,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 30,
+    "status": "included",
+    "id": "H115_140180_30",
+    "qno": 30,
+    "multi": false
+  },
+  {
+    "file": "exam-140180.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "二、教學設計(40%)\n請您依據現行「十二年國民基本教育課程綱要」,以本應試科目,構思「藥物教育」的教學設計。\n(一)設計要求:\n1.教學時長: 共兩節課(50 分鐘/節)。\n2.實施對象: 須明確說"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 1,
+    "status": "included",
+    "id": "H109_86731_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 2,
+    "status": "included",
+    "id": "H109_86731_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 3,
+    "status": "included",
+    "id": "H109_86731_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 4,
+    "status": "included",
+    "id": "H109_86731_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 5,
+    "status": "included",
+    "id": "H109_86731_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 6,
+    "status": "included",
+    "id": "H109_86731_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 7,
+    "status": "included",
+    "id": "H109_86731_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 8,
+    "status": "included",
+    "id": "H109_86731_08",
+    "qno": 8,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 9,
+    "status": "included",
+    "id": "H109_86731_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 10,
+    "status": "included",
+    "id": "H109_86731_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 11,
+    "status": "included",
+    "id": "H109_86731_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 12,
+    "status": "included",
+    "id": "H109_86731_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 13,
+    "status": "included",
+    "id": "H109_86731_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 14,
+    "status": "included",
+    "id": "H109_86731_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 15,
+    "status": "included",
+    "id": "H109_86731_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 16,
+    "status": "included",
+    "id": "H109_86731_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 17,
+    "status": "included",
+    "id": "H109_86731_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 18,
+    "status": "included",
+    "id": "H109_86731_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 19,
+    "status": "included",
+    "id": "H109_86731_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 20,
+    "status": "included",
+    "id": "H109_86731_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "21.依照毒品危害防制條例,毒品的分級是依其(1)________、(2)________及(3)________分為四級。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "22.為達到避孕效果,各種避孕方法分別利用何種避孕原理?(1)________、(2)________、(3)________。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "23.影響人類健康最主要的四大因素有:(1)________、(2)________、(3)________、(4)________。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "24.防治傳染病最好的方法是洗手。正確洗手步驟是濕、搓、沖、捧、擦,其中搓最為關鍵,疾管局建議正確搓的動作7字訣為:(1)___、(2)___、(3)___、(4)___、(5)___、(6)___、"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "25.炎炎夏日熱傷害時有所聞,請簡述常見的熱傷害類型之原因、症狀與處理。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "26.請簡述如何以辛辛那提「FAST」的四個口訣,做中風症狀檢測。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "27.「病人自主權利法」是臺灣第一部以病人為主體的醫療法規,意願人在健康時簽署「預立醫療決定書」,將來若符合哪五種臨床條件?可以確保其尊嚴與善終。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "28.藝人高以翔發生猝死事件令人惋惜,對於猝死若能把握黃金時間施行急救,就是為傷病患爭取活命的最大機會,請簡述如何施行成人CPR。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "29.請寫出健康體位教育的五大核心能力「85210」其數字各代表何意義。"
+  },
+  {
+    "file": "exam-86731.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "1.2007年賈伯斯推出第一台iPhone時曾經說:「革命性的產品將會改變所有的事」。13年後的今天,他的預言成真,世界已被徹底改變,但是我們反而要問,我們喜歡這樣的改變嗎?根據國發會2016年調查,"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 1,
+    "status": "included",
+    "id": "H110_99890_01",
+    "qno": 1,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 2,
+    "status": "included",
+    "id": "H110_99890_02",
+    "qno": 2,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 3,
+    "status": "included",
+    "id": "H110_99890_03",
+    "qno": 3,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 4,
+    "status": "included",
+    "id": "H110_99890_04",
+    "qno": 4,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 5,
+    "status": "included",
+    "id": "H110_99890_05",
+    "qno": 5,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 6,
+    "status": "included",
+    "id": "H110_99890_06",
+    "qno": 6,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 7,
+    "status": "included",
+    "id": "H110_99890_07",
+    "qno": 7,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 8,
+    "status": "context-or-malformed-excluded",
+    "answer": "C",
+    "text": "◎明美16歲,高一女生,身高160公分,體重62公斤,因家中經濟因素,所以每天放學後會到餐廳\n端盤子打工至晚上11點,有時下班後會再跟同事一起去吃宵夜。明美最近覺得自己應該進行體位管\n理,請回答以下問題:"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 9,
+    "status": "included",
+    "id": "H110_99890_09",
+    "qno": 9,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 10,
+    "status": "included",
+    "id": "H110_99890_10",
+    "qno": 10,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 11,
+    "status": "included",
+    "id": "H110_99890_11",
+    "qno": 11,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 12,
+    "status": "included",
+    "id": "H110_99890_12",
+    "qno": 12,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 13,
+    "status": "included",
+    "id": "H110_99890_13",
+    "qno": 13,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 14,
+    "status": "included",
+    "id": "H110_99890_14",
+    "qno": 14,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 15,
+    "status": "included",
+    "id": "H110_99890_15",
+    "qno": 15,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 16,
+    "status": "included",
+    "id": "H110_99890_16",
+    "qno": 16,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 17,
+    "status": "included",
+    "id": "H110_99890_17",
+    "qno": 17,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 18,
+    "status": "included",
+    "id": "H110_99890_18",
+    "qno": 18,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 19,
+    "status": "included",
+    "id": "H110_99890_19",
+    "qno": 19,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 20,
+    "status": "included",
+    "id": "H110_99890_20",
+    "qno": 20,
+    "multi": false
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 21,
+    "status": "non-choice/no-answer",
+    "text": "一、填充題(每格1分,共18分)有四種,請問最高的\n是________ ,佔46%。"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 22,
+    "status": "non-choice/no-answer",
+    "text": "2.COVID-19的英文全名為何?________。"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 23,
+    "status": "non-choice/no-answer",
+    "text": "3.分娩的徵兆有:破水、陰道出血、 ________。"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 24,
+    "status": "non-choice/no-answer",
+    "text": "4.母乳提供(1)________ ,可增加嬰兒的免疫能力;全球母乳哺餵政策鼓勵母親哺餵母乳到寶寶(2)________ 大時。"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 25,
+    "status": "non-choice/no-answer",
+    "text": "5.我國已於 2018 年進入高齡社會,政府推動長照 2.0,期望能因應社會之所需,長照分級讓\n照護更加分,服務體系目前分為 ABC 三級,也就是「長照 ABC」。請問 ABC 各自代表何\n級? A:"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 26,
+    "status": "non-choice/no-answer",
+    "text": "6.教導學生面臨性侵害時,能及時運用 SAFE 安全原則,請寫出其代表之意思:\nS:(1)________ 、A:(2)________ 、F:(3)________、E:(4)________"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 27,
+    "status": "non-choice/no-answer",
+    "text": "7.安寧療護特色-五全照顧,「五全」係指:(1)________ 、(2)________、(3)________ 、(4)________、(5)________等的照護。"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 28,
+    "status": "non-choice/no-answer",
+    "text": "二、問答題(共9題,共42分)\n1.請就肌肉關節、眼睛、精神及睡眠層面說明手機過度使用時對身心的危害?(8分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 29,
+    "status": "non-choice/no-answer",
+    "text": "2.何謂PTSD?個案可能出現的行為或症狀有哪些?(4分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 30,
+    "status": "non-choice/no-answer",
+    "text": "3.意外發生時,患者已無呼吸及心跳,周圍無其他人也無手機的情況下,哪些狀況的患者需先急\n救再求救?要施行多久的急救再去求救呢?(4分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 31,
+    "status": "non-choice/no-answer",
+    "text": "4.請寫出傳染病的傳染途徑及相關的疾病?(5分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 32,
+    "status": "non-choice/no-answer",
+    "text": "5.食品藥物管理署之藥物分級為何?(3分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 33,
+    "status": "non-choice/no-answer",
+    "text": "6.成人CPR胸部按壓的口訣及內容為何?(4分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 34,
+    "status": "non-choice/no-answer",
+    "text": "7.請問當你知道校園中疑似有性侵害、性騷擾或性霸凌事件時該如何處理?(4分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 35,
+    "status": "non-choice/no-answer",
+    "text": "8.請說明綠色消費中的3R3E。(6分)"
+  },
+  {
+    "file": "exam-99890.html",
+    "item": 36,
+    "status": "non-choice/no-answer",
+    "text": "9.我國已邁入高齡化社會,請問何謂高齡化社會?如何增進高齡者自我照顧以促進其成功老化?\n(4分)"
+  }
+]

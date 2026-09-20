@@ -1,0 +1,19 @@
+{
+  "version": "2.4",
+  "authentic_questions": 576,
+  "deep_explanations_present": 576,
+  "source_option_total": 2427,
+  "option_rationales_total": 2427,
+  "missing_questions": [],
+  "extra_deep_ids": [],
+  "structural_issue_count": 0,
+  "structural_issues": [],
+  "deep_files": [
+    "deep_remediation.js",
+    "deep_items_112.js",
+    "deep_items_113.js",
+    "deep_items_114.js",
+    "deep_items_115.js",
+    "deep_items_all_remaining.js"
+  ]
+}
