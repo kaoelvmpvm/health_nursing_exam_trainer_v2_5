@@ -75,10 +75,16 @@ footer{max-width:1180px;margin:20px auto 50px;padding:0 max(24px,env(safe-area-i
 .pending-deep{background:#fff8e8;border:1px solid #ecd9a4;color:#6b5521}
 
 
-/* v2.5 detail upgrade workbench */
-.detail-review-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px;padding:11px 12px;border:1px dashed var(--line);border-radius:12px;background:color-mix(in srgb,var(--soft) 55%,var(--panel))}
-.detail-mark{border-color:#d7b56b;background:#fff9e9;color:#725300;font-weight:760}
-.detail-mark.on{background:#8a6500;color:#fff;border-color:#8a6500}
-body.dark .detail-mark{background:#332b16;color:#f2d98b;border-color:#705f2f}body.dark .detail-mark.on{background:#d4aa3b;color:#1c1607}
-.detail-work-card{margin-top:12px}.detail-note,.deep-paste{width:100%;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);padding:12px 13px;line-height:1.65;resize:vertical}.detail-note{min-height:78px;margin-top:6px}.deep-paste{min-height:220px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86rem}.detail-toolbar{margin-top:0}.detail-toolbar .spacer{flex:1}
-@media(max-width:560px){.detail-review-row{align-items:stretch}.detail-review-row .detail-mark{width:100%;min-height:46px}.deep-paste{min-height:260px;font-size:.8rem}.detail-toolbar{display:grid;grid-template-columns:1fr 1fr}.detail-toolbar .spacer{display:none}.detail-toolbar button{width:100%}.detail-work-card .q-head{display:block}.detail-work-card .q-head .tag{margin-top:8px}}
+
+/* v2.6 persistent personal notes */
+.note-editor{margin-top:15px;padding:14px;border:1px solid var(--line);border-radius:13px;background:color-mix(in srgb,var(--soft) 35%,var(--panel))}
+.note-editor label{display:block;font-weight:800;margin-bottom:8px;color:var(--text)}
+.note-editor textarea{display:block;width:100%;min-height:100px;box-sizing:border-box;padding:12px 13px;resize:vertical;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:10px;font:inherit;line-height:1.7}
+.note-editor textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.note-save-status{padding-top:7px}
+.note-reminder{margin-top:16px;padding:15px;border-radius:12px;background:#fff4d9;border:1px solid #d9ac49;color:#584311;line-height:1.7;white-space:normal}
+.note-reminder b{display:block;margin-bottom:7px}
+.note-reminder p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+body.dark .note-reminder{background:#3b3018;border-color:#95743b;color:#ffe3a7}
+.note-work-card{margin-top:12px}
+@media(max-width:600px){.note-editor{padding:12px}.note-editor textarea{min-height:120px}.note-work-card .q-head{display:block}}

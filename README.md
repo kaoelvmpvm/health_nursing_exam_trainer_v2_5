@@ -1,6 +1,6 @@
-# 高中健護教甄刷題記憶系統 v2.5
+# 高中健護教甄刷題記憶系統 v2.6
 
-建議 GitHub Repo：`health-nursing-exam-trainer`
+GitHub Repo：`health_nursing_exam_trainer_v2_5`
 
 ## 題庫規模
 
@@ -22,23 +22,22 @@
 - 法規、政策、篩檢資格、指引與統計等時效題警示
 - PWA，可加入 iPhone／iPad 主畫面
 - 進度 JSON 備份／還原、錯題 CSV 匯出
-- **v2.5 詳解升級工作台**：可把解析不足題標記後交給 GPT 重寫，再匯回 App
+- **v2.6 學習筆記**：自行記錄、下次答錯提示、筆記本集中管理
 
-## v2.5 詳解升級流程
+## v2.6 學習筆記流程
 
-1. 刷題後若覺得解析不夠細，按 **「標記詳解需加深」**。
-2. 到 **「詳解升級」** 分頁。
-3. 可複製待升級題號、複製完整 GPT 任務，或下載 Markdown 任務檔。
-4. GPT 依固定 JSON 結構回傳：`id / teach / solve / options / memory / sourceNote`。
-5. 將 JSON 貼回 App，或匯入 JSON 檔。
-6. 下次再刷到同一題，系統會優先顯示 **「自訂升級詳解」**。
-7. 若新版不理想，可在工作台一鍵「還原內建詳解」。
+1. 每次作答後，保留原本的正解與逐選項詳解，並提供「我的學習筆記」。
+2. 可記下錯因、判斷技巧、口訣，輸入時自動儲存在瀏覽器。
+3. 再次答錯同一題時，會顯示先前筆記提醒。
+4. 錯題本、學習筆記分頁和模擬考檢討均可檢視及編輯筆記。
+5. 進度 JSON 備份／還原包含個人筆記，錯題 CSV 也會附上筆記。
+6. 取消 v2.5 的 GPT 詳解匯出／匯入流程；既有「待升級」審閱註記會轉入學習筆記。
 
-自訂詳解只改解析，不會修改原題、選項或公布答案。標記、註記與自訂詳解都包含在「匯出進度 JSON」中，可一起備份。
+筆記存在使用者的本機瀏覽器；跨裝置前須先備份進度 JSON。
 
 ## GitHub Pages 部署
 
-1. 建立 Repo：`health-nursing-exam-trainer`
+1. 使用 Repo：`health_nursing_exam_trainer_v2_5`
 2. 將此資料夾內所有檔案上傳到 Repo 根目錄。
 3. GitHub → **Settings → Pages**。
 4. **Build and deployment → Source** 選 `Deploy from a branch`。
@@ -55,10 +54,10 @@
 ## 重要檔案
 
 - `index.html`：入口與分頁
-- `app.js`：刷題、記憶、詳解升級工作台
+- `app.js`：刷題、記憶、學習筆記
 - `style.css`：桌機／iPhone 排版
 - `questions.js`：題庫
 - `deep_items_112.js`～`deep_items_all_remaining.js`：內建逐題詳解
 - `service-worker.js`：PWA 離線快取
-- `詳解匯入格式範例.json`：GPT 詳解回填格式示例
-- `UPDATE_v2.5.md`：本版更新說明
+- `詳解匯入格式範例.json`：v2.5 留存參考檔，現版不再使用
+- `UPDATE_v2.6.md`：本版更新說明
