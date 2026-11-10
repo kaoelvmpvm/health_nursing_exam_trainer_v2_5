@@ -217,7 +217,8 @@ function noteEditorHtml(q,remind=false){
 }
 function bindNoteEditors(){
  document.querySelectorAll('.note-editor').forEach(section=>{
-  const editor=section.querySelector('[data-note-id]');if(!editor)return;
+  const editor=section.querySelector('[data-note-id]');if(!editor||editor.dataset.noteBound==='1')return;
+  editor.dataset.noteBound='1';
   const status=section.querySelector('.note-save-status');
   let lastRange=null;
   const remember=()=>{
