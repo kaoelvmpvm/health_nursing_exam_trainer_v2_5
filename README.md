@@ -1,4 +1,4 @@
-# 高中健護教甄刷題記憶系統 v2.7
+# 高中健護教甄刷題記憶系統 v2.8
 
 GitHub Repo：`health_nursing_exam_trainer_v2_5`
 
@@ -12,6 +12,8 @@ GitHub Repo：`health_nursing_exam_trainer_v2_5`
 
 ## 主要功能
 
+- 一鍵複製目前題目、選項及解析指令，貼到 ChatGPT 取得逐項解析（無需 API）
+
 - 今日智慧練習：到期複習 → 高信心答錯 → 弱點 → 新題
 - 新北 112～115 真題專區、全部高中健護真題、近期真題與來源／年份／領域練習
 - 單選與複選題
@@ -22,9 +24,9 @@ GitHub Repo：`health_nursing_exam_trainer_v2_5`
 - 法規、政策、篩檢資格、指引與統計等時效題警示
 - PWA，可加入 iPhone／iPad 主畫面
 - 進度 JSON 備份／還原、錯題 CSV 匯出
-- **v2.7 格式化筆記**：選項直接標示正誤，筆記可設粗體、底線與顏色
+- **v2.8 格式化筆記**：選項直接標示正誤，筆記可設粗體、底線與顏色
 
-## v2.7 作答回饋與學習筆記
+## v2.8 作答回饋與學習筆記
 
 1. 每次作答後，綠色標示所有正確選項、紅色標示誤選的選項；不再顯示獨立深度解析區塊。
 2. 下方僅保留「我的學習筆記」，選取文字即可設定粗體、底線、字體顏色；輸入時自動儲存。
@@ -60,4 +62,4 @@ GitHub Repo：`health_nursing_exam_trainer_v2_5`
 - `deep_items_112.js`～`deep_items_all_remaining.js`：舊版詳解資料備存，現版不載入
 - `service-worker.js`：PWA 離線快取
 - `詳解匯入格式範例.json`：v2.5 留存參考檔，現版不再使用
-- `UPDATE_v2.7.md`：本版更新說明
+- `UPDATE_v2.8.md`：本版更新說明

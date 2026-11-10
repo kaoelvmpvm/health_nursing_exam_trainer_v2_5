@@ -15,7 +15,7 @@ const sameSet=(a,b)=>{a=[...a].sort((x,y)=>x-y);b=[...b].sort((x,y)=>x-y);return
 const isHistorical=q=>q.historical===true;
 const baseHistorical=()=>bank.filter(isHistorical);
 
-const defaultState=()=>({version:2.7,created:Date.now(),settings:{dailyGoal:20,sessionSize:10,examSize:50,examMinutes:60,examDate:'',theme:'light',defaultPool:'all',textScale:1},answers:{},sessions:[],daily:{},bookmarks:{},reasonCounts:{},notes:{},noteHtml:{},lastMode:null});
+const defaultState=()=>({version:2.8,created:Date.now(),settings:{dailyGoal:20,sessionSize:10,examSize:50,examMinutes:60,examDate:'',theme:'light',defaultPool:'all',textScale:1},answers:{},sessions:[],daily:{},bookmarks:{},reasonCounts:{},notes:{},noteHtml:{},lastMode:null});
 function normalizeState(raw){const v=raw&&typeof raw==='object'?raw:{};const s={...defaultState(),...v};s.notes={...(v.notes||{})};s.noteHtml={...(v.noteHtml||{})};for(const [id,item] of Object.entries(v.detailNeeds||{})){if(!s.notes[id]&&item?.note)s.notes[id]=String(item.note)}return s}
 function loadState(){
   try{const v=JSON.parse(localStorage.getItem(KEY)||'null');if(v)return normalizeState(v);}catch{}
@@ -111,12 +111,61 @@ function startMode(mode,arg){let qs=[],n=state.settings.sessionSize||10,pool=poo
 function targetQueue(kp,n){const same=bank.filter(q=>q.kp===kp).sort((a,b)=>{const ra=rec(a.id),rb=rec(b.id);return (ra.attempts-rb.attempts)||mastery(a)-mastery(b)});const adjacent=bank.filter(q=>q.domain===same[0]?.domain&&q.kp!==kp).sort((a,b)=>mastery(a)-mastery(b));return [...same,...adjacent].slice(0,n)}
 function contextHtml(q){if(!q.context&&!q.contextImages?.length&&!q.questionImages?.length)return '';const imgs=[...(q.contextImages||[]),...(q.questionImages||[])];return `<div class="context-box">${q.context?`<div>${esc(q.context)}</div>`:''}${imgs.map(src=>`<img class="q-image" src="${esc(src)}" loading="lazy" alt="題目附圖">`).join('')}</div>`}
 
+
+function buildGptQuestionPrompt(q){
+ const lines=[
+  '請協助解析以下臺灣高中「健康與護理科教師甄試」選擇題。',
+  '請先獨立判斷正確答案，再以繁體中文：',
+  '1. 先教會解題所需的核心觀念、定義或機轉，不要只公布答案。',
+  '2. 根據題幹逐步推理，清楚指出單選或複選的正確選項。',
+  '3. 逐一分析每個選項為何正確或錯誤，說明容易混淆的關鍵。',
+  '4. 最後整理一個可用來處理類題的記憶重點。',
+  '若涉及法規、政策、醫學指引、篩檢資格或統計，請區分原題年度與現行規定；無法確認時請明說，不要猜測。',
+  '',
+  '【題號】'+q.id,
+  '【來源】'+(q.source||q.sourceCategory||'未註明'),
+  ...(q.year?['【年度】民國'+q.year+'年']:[]),
+  '【題型】'+(q.multi?'複選題':'單選題'),
+  ...(String(q.context||'').trim()?['【題組資料】',String(q.context).trim(),'']:[]),
+  '【題目】',
+  String(q.question||'').trim(),
+  '',
+  '【選項】',
+  ...q.options.map((option,i)=>(LETTERS[i]||String(i+1))+'. '+String(option)),
+  ...((q.questionImages?.length||q.contextImages?.length)?['','注意：原題含圖片，請提醒我另行上傳圖片後再判讀；不可猜測圖片內容。']:[])
+ ];
+ return lines.join('\n');
+}
+async function copyQuestionForGpt(q,button){
+ const prompt=buildGptQuestionPrompt(q),status=document.getElementById('copyQuestionStatus');
+ try{
+  if(navigator.clipboard?.writeText){
+   await navigator.clipboard.writeText(prompt);
+  }else{
+   const field=document.createElement('textarea');
+   field.value=prompt;
+   field.setAttribute('readonly','');
+   field.style.cssText='position:fixed;left:-9999px;top:0;opacity:0';
+   document.body.appendChild(field);
+   field.select();
+   let success=false;
+   try{success=document.execCommand('copy')}finally{field.remove()}
+   if(!success)throw new Error('Clipboard copy unavailable');
+  }
+  if(button?.isConnected)button.textContent='✓ 已複製題目與選項';
+  if(status?.isConnected)status.textContent='已複製提問內容，可直接貼到 ChatGPT。';
+ }catch(e){
+  if(status?.isConnected)status.textContent='無法自動複製，請從彈出視窗手動選取文字。';
+  window.prompt('請手動複製以下 GPT 提問內容：',prompt);
+ }
+}
+
 function renderQuestion(){if(!session)return renderPracticeHome();if(session.index>=session.qs.length)return finishSession();const q=session.qs[session.index];session.qStarted=Date.now();session.selected=[];document.getElementById('practice').innerHTML=`<div class="q-wrap"><div class="card">
 <div class="q-head"><div><div class="q-num">${session.index+1} / ${session.qs.length}　${esc(q.domain)}</div><div class="small muted">${esc(q.kp)} · 難度 ${esc(q.difficulty)} · 熟練度 ${mastery(q)}%</div><div class="source-line">${q.year?`<span class="tag">${q.year}年</span>`:''}<span class="tag">${esc(q.sourceCategory||q.source||'題庫')}</span>${q.multi?'<span class="tag pill-warn">複選題</span>':''}${q.timeSensitive?'<span class="tag pill-warn">時效題</span>':''}</div></div><div><button class="bookmark ${state.bookmarks[q.id]?'on':''}" id="bookmark">★</button>${session.exam?`<span class="timer" id="timer"></span>`:''}</div></div>
 ${q.timeSensitive?'<div class="notice">本題含法規、政策、篩檢資格、數值或指引等時效性資訊。練歷屆題時依原答案作答；考前需以最新官方規範複核。</div>':''}
-${contextHtml(q)}<div class="qtext">${esc(q.question)}</div><div class="options">${q.options.map((o,i)=>`<button class="opt" data-i="${i}"><span class="letter">${LETTERS[i]}</span><span>${esc(o)}</span></button>`).join('')}</div>
+${contextHtml(q)}<div class="qtext">${esc(q.question)}</div><div class="options">${q.options.map((o,i)=>`<button class="opt" data-i="${i}"><span class="letter">${LETTERS[i]}</span><span>${esc(o)}</span></button>`).join('')}</div><div class="gpt-copy-row"><button type="button" id="copyQuestionGPT" class="ghost gpt-copy-btn">複製題目詢問 GPT</button><span id="copyQuestionStatus" class="small muted">一鍵整理題目、選項與提問指令。</span></div>
 <div class="controls" id="questionControls"><div class="confidence"><span class="small muted">作答信心</span>${[1,2,3].map(i=>`<button data-conf="${i}" class="${i===2?'active':''}">${['低','中','高'][i-1]}</button>`).join('')}</div><div class="spacer"></div><button class="primary" id="submitQ">${session.exam?'確認作答':'送出答案'}</button></div><div id="feedback"></div></div></div>`;
- document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;if(q.multi){const a=session.selected;const pos=a.indexOf(i);if(pos>=0)a.splice(pos,1);else a.push(i);b.classList.toggle('selected')}else{session.selected=[i];document.querySelectorAll('.opt').forEach(x=>x.classList.toggle('selected',x===b))}});document.querySelectorAll('[data-conf]').forEach(b=>b.onclick=()=>{session.confidence=+b.dataset.conf;document.querySelectorAll('[data-conf]').forEach(x=>x.classList.toggle('active',x===b))});document.getElementById('bookmark').onclick=()=>{state.bookmarks[q.id]=!state.bookmarks[q.id];save();document.getElementById('bookmark').classList.toggle('on',!!state.bookmarks[q.id])};document.getElementById('submitQ').onclick=submitQuestion;if(session.exam)tickTimer();}
+ document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;if(q.multi){const a=session.selected;const pos=a.indexOf(i);if(pos>=0)a.splice(pos,1);else a.push(i);b.classList.toggle('selected')}else{session.selected=[i];document.querySelectorAll('.opt').forEach(x=>x.classList.toggle('selected',x===b))}});document.querySelectorAll('[data-conf]').forEach(b=>b.onclick=()=>{session.confidence=+b.dataset.conf;document.querySelectorAll('[data-conf]').forEach(x=>x.classList.toggle('active',x===b))});document.getElementById('bookmark').onclick=()=>{state.bookmarks[q.id]=!state.bookmarks[q.id];save();document.getElementById('bookmark').classList.toggle('on',!!state.bookmarks[q.id])};document.getElementById('submitQ').onclick=submitQuestion;document.getElementById('copyQuestionGPT').onclick=e=>copyQuestionForGpt(q,e.currentTarget);if(session.exam)tickTimer();}
 function tickTimer(){if(!session?.exam)return;const el=document.getElementById('timer');if(!el)return;const left=Math.max(0,session.deadline-Date.now()),m=Math.floor(left/60000),s=Math.floor(left%60000/1000);el.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;if(left<=0)return finishSession();setTimeout(tickTimer,1000)}
 function submitQuestion(){
  const selected=selectedArr();if(!selected.length){alert('請先選擇答案。');return}
@@ -285,5 +334,5 @@ function renderSettings(){document.getElementById('settings').innerHTML=`<div cl
 function readJson(file,cb){if(!file)return;const fr=new FileReader();fr.onload=()=>{try{cb(JSON.parse(fr.result))}catch(e){alert('匯入失敗：'+e.message)}};fr.readAsText(file)}
 
 renderDashboard();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./service-worker.js?v=2.7.0').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./service-worker.js?v=2.8.0').catch(()=>{});
 })();

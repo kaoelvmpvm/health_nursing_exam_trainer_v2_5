@@ -66,3 +66,9 @@ footer{max-width:1180px;margin:20px auto 50px;padding:0 max(24px,env(safe-area-i
 .note-work-card{margin-top:12px}
 #feedback .answer-actions{margin-top:15px}
 @media(max-width:600px){.note-editor{padding:12px;margin-top:17px}.note-content{min-height:140px}.note-toolbar{gap:5px;padding:7px}.note-toolbar button{min-width:33px;padding:5px}.note-work-card .q-head{display:block}}
+
+/* v2.8: One-click ChatGPT question copy */
+.gpt-copy-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0 16px}
+.gpt-copy-btn{flex:0 0 auto;min-height:40px;padding:8px 13px;font-size:.9rem;font-weight:750}
+#copyQuestionStatus{line-height:1.5}
+@media(max-width:600px){.gpt-copy-row{align-items:stretch;flex-direction:column}.gpt-copy-btn{width:100%;min-height:45px;text-align:center}}
