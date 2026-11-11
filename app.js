@@ -2,8 +2,9 @@
 const BASE=window.QUESTION_BANK||[];
 const KEY='hn_exam_trainer_state_v2', OLDKEY='hn_exam_trainer_state_v1', CUSTOM='hn_exam_trainer_custom_v2';
 const LETTERS='ABCDEF';
-const today=()=>new Date().toISOString().slice(0,10);
-const addDays=n=>{const d=new Date();d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)};
+const localDate=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const today=()=>localDate(new Date());
+const addDays=n=>{const d=new Date();d.setDate(d.getDate()+n);return localDate(d)};
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -15,8 +16,8 @@ const sameSet=(a,b)=>{a=[...a].sort((x,y)=>x-y);b=[...b].sort((x,y)=>x-y);return
 const isHistorical=q=>q.historical===true;
 const baseHistorical=()=>bank.filter(isHistorical);
 
-const defaultState=()=>({version:2.8,created:Date.now(),settings:{dailyGoal:20,sessionSize:10,examSize:50,examMinutes:60,examDate:'',theme:'light',defaultPool:'all',textScale:1},answers:{},sessions:[],daily:{},bookmarks:{},reasonCounts:{},notes:{},noteHtml:{},lastMode:null});
-function normalizeState(raw){const v=raw&&typeof raw==='object'?raw:{};const s={...defaultState(),...v};s.notes={...(v.notes||{})};s.noteHtml={...(v.noteHtml||{})};for(const [id,item] of Object.entries(v.detailNeeds||{})){if(!s.notes[id]&&item?.note)s.notes[id]=String(item.note)}return s}
+const defaultState=()=>({version:2.9,created:Date.now(),settings:{dailyGoal:20,sessionSize:10,examSize:50,examMinutes:60,examDate:'',theme:'light',defaultPool:'all',textScale:1},answers:{},sessions:[],daily:{},bookmarks:{},reasonCounts:{},notes:{},noteHtml:{},lastMode:null});
+function normalizeState(raw){const v=raw&&typeof raw==='object'?raw:{};const s={...defaultState(),...v,version:2.9};s.notes={...(v.notes||{})};s.noteHtml={...(v.noteHtml||{})};for(const [id,item] of Object.entries(v.detailNeeds||{})){if(!s.notes[id]&&item?.note)s.notes[id]=String(item.note)}return s}
 function loadState(){
   try{const v=JSON.parse(localStorage.getItem(KEY)||'null');if(v)return normalizeState(v);}catch{}
   // migrate v1 self-authored progress if present
@@ -27,9 +28,28 @@ let state=loadState();
 let custom=(()=>{try{return JSON.parse(localStorage.getItem(CUSTOM)||'[]')}catch{return []}})();
 let bank=[...BASE,...custom];
 let session=null;
+let wrongbookFilter='pending';
 const save=()=>{localStorage.setItem(KEY,JSON.stringify(state));localStorage.setItem(CUSTOM,JSON.stringify(custom))};
 
 function rec(qid){return state.answers[qid]||{attempts:0,correct:0,wrong:0,streak:0,interval:0,ease:2.3,due:today(),last:null,lastConfidence:null,totalMs:0,reasons:{},history:[]}}
+function wrongStage(r){
+ if(!r||(r.wrong||0)===0)return null;
+ if(['pending','consolidating','mastered'].includes(r.wrongStage))return r.wrongStage;
+ const history=Array.isArray(r.history)?r.history:[];
+ if(history.length){
+  const last=history[history.length-1];
+  if(last.correct===false)return 'pending';
+  if(last.correct===true){
+   const lastWrong=history.map(x=>x.correct).lastIndexOf(false);
+   const corrects=history.slice(lastWrong+1).filter(x=>x.correct===true);
+   if(lastWrong>=0&&corrects.length>=2&&corrects.some(x=>x.date>corrects[0].date))return 'mastered';
+   return 'consolidating';
+  }
+ }
+ return (r.streak||0)>0?'consolidating':'pending';
+}
+function activeBlind(q){const r=rec(q.id);return wrongStage(r)==='pending'&&r.lastConfidence===3}
+function allWrongQs(pool=bank){return pool.filter(q=>rec(q.id).wrong>0)}
 function setrec(qid,r){state.answers[qid]=r}
 function mastery(q){const r=rec(q.id);if(!r.attempts)return 0;const acc=r.correct/r.attempts;const conf=(r.lastConfidence||1)/3;const duePenalty=r.due<today()?0.12:0;return Math.round(clamp((.72*acc+.18*conf+.10*Math.min(r.streak/4,1)-duePenalty)*100,0,100))}
 function kpStats(){const map={};for(const q of bank){const k=q.domain+'｜'+q.kp;if(!map[k])map[k]={domain:q.domain,kp:q.kp,qs:[],attempts:0,correct:0,wrong:0,mastery:0};map[k].qs.push(q);const r=rec(q.id);map[k].attempts+=r.attempts;map[k].correct+=r.correct;map[k].wrong+=r.wrong;map[k].mastery+=mastery(q)}for(const k in map)map[k].mastery=Math.round(map[k].mastery/map[k].qs.length);return Object.values(map)}
@@ -37,19 +57,29 @@ function domainStats(){const m={};for(const q of bank){m[q.domain]??={domain:q.d
 function sourceStats(){const m={};for(const q of baseHistorical()){const k=`${q.year}｜${q.sourceCategory}`;m[k]??={year:q.year,source:q.sourceCategory,qs:0,attempts:0,correct:0};const x=m[k],r=rec(q.id);x.qs++;x.attempts+=r.attempts;x.correct+=r.correct}return Object.values(m).sort((a,b)=>b.year-a.year||a.source.localeCompare(b.source,'zh-Hant')).map(x=>({...x,accuracy:x.attempts?Math.round(x.correct/x.attempts*100):0}))}
 function dueQs(pool=bank){return pool.filter(q=>rec(q.id).attempts&&rec(q.id).due<=today())}
 function unseen(pool=bank){return pool.filter(q=>!rec(q.id).attempts)}
-function wrongQs(pool=bank){return pool.filter(q=>rec(q.id).wrong>0).sort((a,b)=>(rec(b.id).blind||0)-(rec(a.id).blind||0)||rec(b.id).wrong-rec(a.id).wrong||mastery(a)-mastery(b))}
-function totalStats(){let attempts=0,correct=0,ms=0;Object.values(state.answers).forEach(r=>{attempts+=r.attempts||0;correct+=r.correct||0;ms+=r.totalMs||0});return {attempts,correct,accuracy:attempts?Math.round(correct/attempts*100):0,mastered:bank.filter(q=>mastery(q)>=80).length,due:dueQs().length,unseen:unseen().length,blind:bank.filter(q=>(rec(q.id).blind||0)>0).length,avgSec:attempts?Math.round(ms/attempts/1000):0}}
+function wrongQs(pool=bank){return allWrongQs(pool).filter(q=>wrongStage(rec(q.id))==='pending').sort((a,b)=>(rec(a.id).lastWrongReviewAt||0)-(rec(b.id).lastWrongReviewAt||0)||Number(activeBlind(b))-Number(activeBlind(a))||rec(b.id).wrong-rec(a.id).wrong||mastery(a)-mastery(b))}
+function totalStats(){let attempts=0,correct=0,ms=0;Object.values(state.answers).forEach(r=>{attempts+=r.attempts||0;correct+=r.correct||0;ms+=r.totalMs||0});return {attempts,correct,accuracy:attempts?Math.round(correct/attempts*100):0,mastered:bank.filter(q=>mastery(q)>=80).length,due:dueQs().length,unseen:unseen().length,blind:bank.filter(activeBlind).length,avgSec:attempts?Math.round(ms/attempts/1000):0}}
 function dailyData(){return state.daily[today()]||{answered:0,correct:0}}
 function examCountdown(){if(!state.settings.examDate)return null;return Math.ceil((new Date(state.settings.examDate+'T00:00:00')-new Date())/86400000)}
 function poolByDefault(){if(state.settings.defaultPool==='historical')return baseHistorical();if(state.settings.defaultPool==='newtaipei')return bank.filter(q=>q.sourceCategory==='新北高中聯招');return bank}
 
 function switchTab(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));render(id)}
 document.getElementById('tabs').addEventListener('click',e=>{if(e.target.dataset.tab)switchTab(e.target.dataset.tab)});
-document.getElementById('btnQuick').onclick=()=>startMode('daily');
+document.getElementById('btnQuick').onclick=()=>{switchTab('dashboard');document.querySelector('#dashboard [data-daily-count]')?.focus()};
 document.getElementById('btnTheme').onclick=()=>{state.settings.theme=state.settings.theme==='dark'?'light':'dark';applyTheme();save()};
 function applyTheme(){document.body.classList.toggle('dark',state.settings.theme==='dark');document.getElementById('btnTheme').textContent=state.settings.theme==='dark'?'淺色':'深色';document.documentElement.style.setProperty('--reader-scale',state.settings.textScale||1)}applyTheme();
 function render(id){({dashboard:renderDashboard,practice:renderPracticeHome,wrongbook:renderWrongbook,knowledge:renderKnowledge,stats:renderStats,notes:renderNotes,settings:renderSettings}[id]||(()=>{}))()}
 
+function bindDailyForms(root){
+ root.querySelectorAll('[data-daily-form]').forEach(form=>form.onsubmit=e=>{
+  e.preventDefault();
+  const input=form.querySelector('[data-daily-count]');
+  if(!input.reportValidity())return;
+  const count=Number(input.value),limit=poolByDefault().length;
+  if(!Number.isInteger(count)||count<1||count>limit){alert('本次題數請輸入 1 至 '+limit+' 的整數。');return}
+  startMode('daily',count);
+ });
+}
 function renderDashboard(){const t=totalStats(),d=dailyData(),goal=state.settings.dailyGoal,days=examCountdown();const ds=domainStats().sort((a,b)=>a.mastery-b.mastery), hist=baseHistorical().length, self=bank.filter(q=>!isHistorical(q)).length;document.getElementById('dashboard').innerHTML=`
 <div class="grid cols4">
  <div class="card metric"><div class="label">今日進度</div><div class="value">${d.answered}/${goal}</div><div class="progress"><i style="width:${clamp(d.answered/goal*100,0,100)}%"></i></div></div>
@@ -60,39 +90,60 @@ function renderDashboard(){const t=totalStats(),d=dailyData(),goal=state.setting
 <div class="notice" style="margin-top:18px"><b>v2 題庫：</b>20份考卷解析後，納入 ${hist} 題可作答真題；題組前言不當成獨立題。含複選題 ${baseHistorical().filter(q=>q.multi).length} 題。</div>
 <div class="section-title"><h2>今天怎麼刷</h2><span class="muted small">到期複習 → 高信心錯題 → 弱點 → 新題</span></div>
 <div class="action-grid">
- <button class="action" data-mode="daily"><b>今日智慧練習</b><span>依記憶排程自動混題</span></button>
+ <form class="daily-start-card" data-daily-form>
+ <b>今日智慧練習</b><span class="small muted">到期複習優先，搭配弱點與新題。</span>
+ <div class="daily-start-controls"><label>本次題數
+ <input type="number" data-daily-count min="1" max="${poolByDefault().length}" inputmode="numeric" step="1" required value="${state.lastMode?.mode==='daily'&&Number.isInteger(state.lastMode.arg)?state.lastMode.arg:(state.settings.sessionSize||10)}"></label>
+ <button type="submit" class="primary">開始練習</button></div>
+ </form>
  <button class="action" data-mode="newtaipei"><b>新北歷屆真題</b><span>112～115，共 ${bank.filter(q=>q.sourceCategory==='新北高中聯招').length} 題</span></button>
  <button class="action" data-mode="historical"><b>全部高中健護真題</b><span>${hist} 題，109～115</span></button>
  <button class="action" data-mode="due"><b>間隔複習</b><span>${t.due} 題已到期</span></button>
  <button class="action" data-mode="weak"><b>弱點鏢靶</b><span>最低熟練知識點優先</span></button>
- <button class="action" data-mode="wrong"><b>錯題重刷</b><span>${wrongQs().length} 題曾答錯</span></button>
+ <button class="action" data-mode="wrong"><b>錯題重刷</b><span>${wrongQs().length} 題待訂正</span></button>
  <button class="action" data-mode="sprint"><b>考前衝刺</b><span>盲點＋常錯＋低熟練</span></button>
  <button class="action" data-mode="mock"><b>模擬考</b><span>${state.settings.examSize}題／${state.settings.examMinutes}分鐘</span></button>
 </div>
 <div class="section-title"><h2>目前最弱領域</h2><button id="goKnowledge">看完整知識地圖</button></div>
 <div class="grid cols3">${ds.slice(0,3).map(x=>`<div class="card domain-card"><h3>${esc(x.domain)}</h3><div class="meta"><span>熟練度</span><b>${x.mastery}%</b></div><div class="progress"><i style="width:${x.mastery}%"></i></div><div class="small muted" style="margin-top:8px">正確率 ${x.accuracy}%｜${x.qs}題</div></div>`).join('')}</div>`;
- document.querySelectorAll('#dashboard [data-mode]').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));document.getElementById('goKnowledge').onclick=()=>switchTab('knowledge');}
+ document.querySelectorAll('#dashboard [data-mode]').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));bindDailyForms(document.getElementById('dashboard'));document.getElementById('goKnowledge').onclick=()=>switchTab('knowledge');}
 
 function renderPracticeHome(){const years=[...new Set(baseHistorical().map(q=>q.year))].sort((a,b)=>b-a), sources=[...new Set(baseHistorical().map(q=>q.sourceCategory))];document.getElementById('practice').innerHTML=`
 <div class="section-title"><h2>選擇刷題模式</h2><span class="muted small">可依來源、年份或知識點練習</span></div>
 <div class="action-grid">
-<button class="action" data-mode="daily"><b>今日智慧練習</b><span>最推薦：記憶＋弱點</span></button>
+<form class="daily-start-card" data-daily-form>
+ <b>今日智慧練習</b><span class="small muted">自行輸入本次練習題數。</span>
+ <div class="daily-start-controls"><label>本次題數
+ <input type="number" data-daily-count min="1" max="${poolByDefault().length}" inputmode="numeric" step="1" required value="${state.lastMode?.mode==='daily'&&Number.isInteger(state.lastMode.arg)?state.lastMode.arg:(state.settings.sessionSize||10)}"></label>
+ <button type="submit" class="primary">開始練習</button></div>
+ </form>
 <button class="action" data-mode="newtaipei"><b>新北112～115</b><span>${bank.filter(q=>q.sourceCategory==='新北高中聯招').length}題</span></button>
 <button class="action" data-mode="historical"><b>全部歷屆真題</b><span>${baseHistorical().length}題</span></button>
 <button class="action" data-mode="recent"><b>114～115真題</b><span>${bank.filter(q=>q.historical&&q.year>=114).length}題</span></button>
 <button class="action" data-mode="due"><b>到期複習</b><span>依間隔記憶排程</span></button>
 <button class="action" data-mode="weak"><b>弱點鏢靶</b><span>最低熟練知識點優先</span></button>
-<button class="action" data-mode="wrong"><b>錯題本練習</b><span>錯題與盲點優先</span></button>
+<button class="action" data-mode="wrong"><b>錯題重刷</b><span>只抽待訂正題目（目前 ${wrongQs().length} 題）</span></button>
 <button class="action" data-mode="random"><b>隨機練習</b><span>依設定的預設題庫</span></button>
 <button class="action" data-mode="mock"><b>模擬考</b><span>${state.settings.examSize}題／${state.settings.examMinutes}分鐘</span></button>
 </div>
 <div class="grid cols2" style="margin-top:16px"><div class="card"><h3>依年份</h3><div class="reason-buttons">${years.map(y=>`<button data-year="${y}">${y}年</button>`).join('')}</div></div><div class="card"><h3>依來源</h3><div class="reason-buttons">${sources.map(s=>`<button data-source="${esc(s)}">${esc(s)}</button>`).join('')}</div></div></div>
 <div class="section-title"><h2>依領域練習</h2></div><div class="grid cols3">${domainStats().sort((a,b)=>a.domain.localeCompare(b.domain,'zh-Hant')).map(d=>`<button class="action domain-btn" data-domain="${esc(d.domain)}"><b>${esc(d.domain)}</b><span>${d.qs}題｜熟練 ${d.mastery}%</span></button>`).join('')}</div>`;
- document.querySelectorAll('#practice [data-mode]').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));document.querySelectorAll('.domain-btn').forEach(b=>b.onclick=()=>startMode('domain',b.dataset.domain));document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>startMode('year',+b.dataset.year));document.querySelectorAll('[data-source]').forEach(b=>b.onclick=()=>startMode('source',b.dataset.source));}
+ document.querySelectorAll('#practice [data-mode]').forEach(b=>b.onclick=()=>startMode(b.dataset.mode));bindDailyForms(document.getElementById('practice'));document.querySelectorAll('.domain-btn').forEach(b=>b.onclick=()=>startMode('domain',b.dataset.domain));document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>startMode('year',+b.dataset.year));document.querySelectorAll('[data-source]').forEach(b=>b.onclick=()=>startMode('source',b.dataset.source));}
 
-function dailyQueue(n,pool=poolByDefault()){const blind=pool.filter(q=>(rec(q.id).blind||0)>0).sort((a,b)=>(rec(b.id).blind||0)-(rec(a.id).blind||0));const due=shuffle(dueQs(pool)).sort((a,b)=>mastery(a)-mastery(b));const weak=shuffle([...pool]).sort((a,b)=>mastery(a)-mastery(b));const fresh=shuffle(unseen(pool));const out=[],seen=new Set();for(const group of [blind,due,weak.slice(0,Math.ceil(n*.7)),fresh])for(const q of group){if(!seen.has(q.id)){out.push(q);seen.add(q.id)}if(out.length>=n)return out}return out}
+function dailyQueue(n,pool=poolByDefault()){
+ const rank=new Map(kpStats().map(k=>[k.domain+'｜'+k.kp,k.mastery]));
+ const due=shuffle(dueQs(pool)).sort((a,b)=>Number(activeBlind(b))-Number(activeBlind(a))||Number(wrongStage(rec(b.id))==='pending')-Number(wrongStage(rec(a.id))==='pending')||mastery(a)-mastery(b));
+ const fresh=shuffle(unseen(pool)).sort((a,b)=>(rank.get(a.domain+'｜'+a.kp)||0)-(rank.get(b.domain+'｜'+b.kp)||0));
+ return [...due,...fresh].slice(0,n);
+}
 function startMode(mode,arg){let qs=[],n=state.settings.sessionSize||10,pool=poolByDefault();
- if(mode==='daily')qs=dailyQueue(Math.max(n,state.settings.dailyGoal-dailyData().answered),pool);
+ if(mode==='daily'){
+  const requested=Number(arg);
+  n=Number.isInteger(requested)&&requested>0?requested:n;
+  n=Math.min(n,pool.length);
+  qs=dailyQueue(n,pool);
+  if(qs.length<n&&qs.length>0)alert('目前僅有 '+qs.length+' 題符合到期或未作答條件，為避免提前重複已答對的題目，本次將練習 '+qs.length+' 題。');
+ }
  if(mode==='due')qs=shuffle(dueQs(pool)).slice(0,Math.max(n,dueQs(pool).length));
  if(mode==='weak'){const kps=kpStats().sort((a,b)=>a.mastery-b.mastery).slice(0,4);qs=shuffle(kps.flatMap(k=>k.qs)).slice(0,n)}
  if(mode==='wrong')qs=wrongQs(pool).slice(0,n);
@@ -102,7 +153,12 @@ function startMode(mode,arg){let qs=[],n=state.settings.sessionSize||10,pool=poo
  if(mode==='recent')qs=shuffle(bank.filter(q=>q.historical&&q.year>=114)).slice(0,n);
  if(mode==='year')qs=shuffle(bank.filter(q=>q.historical&&q.year===arg)).slice(0,n);
  if(mode==='source')qs=shuffle(bank.filter(q=>q.historical&&q.sourceCategory===arg)).slice(0,n);
- if(mode==='sprint'){const blind=pool.filter(q=>(rec(q.id).blind||0)>0),w=wrongQs(pool),weak=[...pool].sort((a,b)=>mastery(a)-mastery(b));qs=[];const seen=new Set();const target=Math.max(20,n);outer:for(const group of [blind,w,weak])for(const q of group){if(!seen.has(q.id)){qs.push(q);seen.add(q.id)}if(qs.length>=target)break outer}}
+ if(mode==='sprint'){
+  const eligible=pool.filter(q=>!rec(q.id).attempts||rec(q.id).due<=today());
+  const blind=eligible.filter(activeBlind),pending=wrongQs(eligible),weak=eligible.filter(q=>rec(q.id).attempts).sort((a,b)=>mastery(a)-mastery(b)),fresh=shuffle(unseen(eligible));
+  qs=[];const seen=new Set();const target=Math.max(20,n);
+  outer:for(const group of [blind,pending,weak,fresh])for(const q of group){if(!seen.has(q.id)){qs.push(q);seen.add(q.id)}if(qs.length>=target)break outer}
+ }
  if(mode==='domain')qs=shuffle(bank.filter(q=>q.domain===arg)).slice(0,n);
  if(mode==='target')qs=targetQueue(arg,n);
  if(mode==='mock')qs=shuffle(pool).slice(0,Math.min(state.settings.examSize,pool.length));
@@ -196,11 +252,67 @@ function submitQuestion(){
  save();
 }
 function applyReason(qid,reason){const r=rec(qid);r.reasons??={};r.reasons[reason]=(r.reasons[reason]||0)+1;state.reasonCounts[reason]=(state.reasonCounts[reason]||0)+1;setrec(qid,r);save()}
-function updateRecord(q,correct,confidence,ms){const r=rec(q.id);r.attempts++;r.totalMs=(r.totalMs||0)+ms;r.last=today();r.lastConfidence=confidence;if(correct){r.correct++;r.streak=(r.streak||0)+1;let iv=r.interval||0;if(confidence===1){iv=1;r.ease=clamp((r.ease||2.3)-.05,1.3,3)}else if(iv===0)iv=confidence===3?3:2;else iv=Math.max(2,Math.round(iv*(r.ease||2.3)*(confidence===2?.75:1)));r.interval=clamp(iv,1,90);r.due=addDays(r.interval)}else{r.wrong++;if(confidence===3)r.blind=(r.blind||0)+1;r.streak=0;r.interval=1;r.ease=clamp((r.ease||2.3)-.18,1.3,3);r.due=addDays(1)}r.history=(r.history||[]).slice(-29);r.history.push({date:today(),correct,confidence,ms});setrec(q.id,r);state.daily[today()]??={answered:0,correct:0};state.daily[today()].answered++;if(correct)state.daily[today()].correct++}
+function updateRecord(q,correct,confidence,ms){
+ const r=rec(q.id),previousStage=wrongStage(r),previousDue=r.due;
+ r.attempts++;r.totalMs=(r.totalMs||0)+ms;r.last=today();r.lastConfidence=confidence;
+ if(correct){
+  r.correct++;r.streak=(r.streak||0)+1;
+  let iv=r.interval||0;
+  if(confidence===1){iv=1;r.ease=clamp((r.ease||2.3)-.05,1.3,3)}
+  else if(iv===0)iv=confidence===3?3:2;
+  else iv=Math.max(2,Math.round(iv*(r.ease||2.3)*(confidence===2?.75:1)));
+  r.interval=clamp(iv,1,90);r.due=addDays(r.interval);
+  if(r.wrong>0){
+   if(previousStage==='pending'){r.wrongStage='consolidating';r.consolidationSince=today()}
+   else if(previousStage==='consolidating'){
+    const afterFirst=!(r.consolidationSince)||today()>r.consolidationSince;
+    r.wrongStage=afterFirst&&!!previousDue&&previousDue<=today()?'mastered':'consolidating';
+    r.consolidationSince??=today();
+   }else if(previousStage==='mastered')r.wrongStage='mastered';
+  }
+ }else{
+  r.wrong++;if(confidence===3)r.blind=(r.blind||0)+1;
+  r.wrongStage='pending';r.consolidationSince=null;
+  r.streak=0;r.interval=1;
+  r.ease=clamp((r.ease||2.3)-.18,1.3,3);r.due=addDays(1);
+ }
+ if(session?.mode==='wrong')r.lastWrongReviewAt=Date.now();
+ r.history=(r.history||[]).slice(-29);
+ r.history.push({date:today(),correct,confidence,ms});
+ setrec(q.id,r);
+ state.daily[today()]??={answered:0,correct:0};
+ state.daily[today()].answered++;
+ if(correct)state.daily[today()].correct++;
+}
 function finishSession(){if(!session)return;const total=session.answers.length,correct=session.answers.filter(x=>x.correct).length,dur=Date.now()-session.started;state.sessions.push({date:today(),mode:session.mode,arg:session.arg,total,correct,durationMs:dur});state.sessions=state.sessions.slice(-200);save();const exam=session.exam,ans=[...session.answers],qs=[...session.qs];session=null;document.getElementById('practice').innerHTML=`<div class="q-wrap"><div class="card"><h2>本次完成</h2><div class="grid cols3"><div class="metric"><div class="label">正確率</div><div class="value">${total?Math.round(correct/total*100):0}%</div></div><div class="metric"><div class="label">答對</div><div class="value">${correct}/${total}</div></div><div class="metric"><div class="label">耗時</div><div class="value">${Math.round(dur/60000)}分</div></div></div>${exam?`<div class="section-title"><h2>模擬考檢討</h2></div>${ans.map((a,i)=>{const q=qs.find(x=>x.id===a.qid);return `<div class="card" style="margin-top:10px"><b>${i+1}. ${esc(q.question)}</b><div class="small ${a.correct?'pill-good':'pill-bad'}">你的答案 ${a.selected.map(x=>LETTERS[x]).join('、')}｜正解 ${ansText(q)}</div>${noteEditorHtml(q,!a.correct&&Boolean(getNote(q.id).trim()))}</div>`}).join('')}`:''}<div class="controls"><button id="homeBtn">回總覽</button><button class="primary" id="again">再做一組</button></div></div></div>`;document.getElementById('homeBtn').onclick=()=>switchTab('dashboard');document.getElementById('again').onclick=()=>state.lastMode?startMode(state.lastMode.mode,state.lastMode.arg):startMode('daily');bindNoteEditors()}
 
-function renderWrongbook(){const qs=wrongQs();document.getElementById('wrongbook').innerHTML=`<div class="section-title"><h2>錯題本</h2><span class="muted small">高信心答錯會標記為盲點，優先回鍋</span></div>${qs.length?`<input class="search" id="wrongSearch" placeholder="搜尋題目、領域、知識點、來源"><div id="wrongList">${wrongRows(qs)}</div>`:'<div class="card empty">目前沒有錯題。</div>'}`;const s=document.getElementById('wrongSearch');if(s)s.oninput=()=>{const x=s.value.toLowerCase();document.getElementById('wrongList').innerHTML=wrongRows(qs.filter(q=>(q.question+q.domain+q.kp+(q.source||'')).toLowerCase().includes(x)));bindWrongButtons()};bindWrongButtons()}
-function wrongRows(qs){return qs.map(q=>{const r=rec(q.id);return `<div class="card" style="margin-top:12px"><div class="q-head"><div><b>${q.id}｜${esc(q.question)}</b><div class="small muted">${esc(q.domain)} · ${esc(q.kp)} · ${esc(q.sourceCategory||q.source)}</div></div><span class="pill-bad">錯 ${r.wrong} 次${(r.blind||0)?`｜盲點 ${r.blind} 次`:''}</span></div><div class="small">正解：<b>${ansText(q)} ${ansArr(q).map(i=>esc(q.options[i])).join('；')}</b></div>${noteEditorHtml(q)}<div class="controls"><button data-target="${esc(q.kp)}">鏢靶類題</button><button data-one="${q.id}">重做此題</button><div class="spacer"></div><span class="small muted">下次複習 ${r.due}</span></div></div>`}).join('')}
+function renderWrongbook(){
+ const all=allWrongQs(),count=stage=>all.filter(q=>wrongStage(rec(q.id))===stage).length;
+ const filters=[['pending','待訂正',count('pending')],['consolidating','待鞏固',count('consolidating')],['mastered','已掌握',count('mastered')],['all','全部紀錄',all.length]];
+ const visible=wrongbookFilter==='all'?all:all.filter(q=>wrongStage(rec(q.id))===wrongbookFilter);
+ document.getElementById('wrongbook').innerHTML=`<div class="section-title"><h2>錯題本</h2><span class="muted small">答對後離開待訂正，依間隔複習再次驗證</span></div>
+ <div class="wrong-filter-row">${filters.map(([key,label,n])=>`<button type="button" data-wrong-filter="${key}" class="${wrongbookFilter===key?'active':''}">${label} ${n}</button>`).join('')}</div>
+ ${all.length?'<input class="search" id="wrongSearch" placeholder="搜尋題目、知識點或個人筆記">':''}
+ <div id="wrongList">${wrongRows(visible)}</div>`;
+ document.querySelectorAll('[data-wrong-filter]').forEach(b=>b.onclick=()=>{wrongbookFilter=b.dataset.wrongFilter;renderWrongbook()});
+ const search=document.getElementById('wrongSearch');
+ if(search)search.oninput=()=>{const k=search.value.toLowerCase();document.getElementById('wrongList').innerHTML=wrongRows(visible.filter(q=>(q.id+q.question+q.domain+q.kp+(q.source||'')+getNote(q.id)).toLowerCase().includes(k)));bindWrongButtons()};
+ bindWrongButtons();
+}
+function wrongRows(qs){
+ if(!qs.length)return '<div class="card empty">此分類目前沒有題目。</div>';
+ return qs.map(q=>{
+  const r=rec(q.id),stage=wrongStage(r);
+  const title=stage==='pending'?'待訂正':stage==='consolidating'?'待鞏固':'已掌握';
+  const badge=stage==='pending'?'pill-bad':stage==='mastered'?'pill-good':'pill-warn';
+  const next=stage==='pending'?'可立即重刷':stage==='consolidating'?'下次間隔複習 '+(r.due||'待排程'):'保留歷史紀錄';
+  return `<div class="card" style="margin-top:12px">
+   <div class="q-head"><div><b>${q.id}｜${esc(q.question)}</b><div class="small muted">${esc(q.domain)} · ${esc(q.kp)} · ${esc(q.sourceCategory||q.source)}</div></div><span class="${badge}">${title}｜累計錯 ${r.wrong} 次</span></div>
+   <div class="small">正解：<b>${ansText(q)} ${ansArr(q).map(i=>esc(q.options[i])).join('；')}</b></div>
+   ${noteEditorHtml(q)}
+   <div class="controls"><button data-target="${esc(q.kp)}">鏢靶類題</button><button data-one="${q.id}">重做此題</button><div class="spacer"></div><span class="small muted">${esc(next)}</span></div></div>`;
+ }).join('');
+}
 function bindWrongButtons(){document.querySelectorAll('[data-target]').forEach(b=>b.onclick=()=>startMode('target',b.dataset.target));document.querySelectorAll('[data-one]').forEach(b=>b.onclick=()=>{const q=bank.find(x=>x.id===b.dataset.one);session={mode:'single',qs:[q],index:0,answers:[],started:Date.now(),qStarted:Date.now(),selected:[],confidence:2,exam:false};switchTab('practice');renderQuestion()});bindNoteEditors()}
 
 
@@ -329,10 +441,10 @@ function renderStats(){const t=totalStats(),ds=domainStats().sort((a,b)=>a.maste
 
 function renderSettings(){document.getElementById('settings').innerHTML=`<div class="section-title"><h2>練習設定</h2></div><div class="card"><div class="form-row"><label>每日目標題數</label><input id="dailyGoal" type="number" min="5" max="100" value="${state.settings.dailyGoal}"></div><div class="form-row"><label>一般練習每組</label><input id="sessionSize" type="number" min="5" max="50" value="${state.settings.sessionSize}"></div><div class="form-row"><label>模擬考題數</label><input id="examSize" type="number" min="10" max="100" value="${state.settings.examSize}"></div><div class="form-row"><label>模擬考分鐘</label><input id="examMinutes" type="number" min="10" max="180" value="${state.settings.examMinutes}"></div><div class="form-row"><label>預設智慧練習題庫</label><select id="defaultPool"><option value="all" ${state.settings.defaultPool==='all'?'selected':''}>全部題庫</option><option value="historical" ${state.settings.defaultPool==='historical'?'selected':''}>只刷真題</option><option value="newtaipei" ${state.settings.defaultPool==='newtaipei'?'selected':''}>只刷新北真題</option></select></div><div class="form-row"><label>閱讀字級</label><select id="textScale"><option value="0.95" ${(state.settings.textScale||1)===0.95?'selected':''}>緊湊</option><option value="1" ${(state.settings.textScale||1)===1?'selected':''}>舒適</option><option value="1.1" ${(state.settings.textScale||1)===1.1?'selected':''}>大字</option><option value="1.2" ${(state.settings.textScale||1)===1.2?'selected':''}>特大字</option></select></div><div class="form-row"><label>預定考試日期</label><input id="examDate" type="date" value="${state.settings.examDate||''}"></div><button class="primary" id="saveSettings">儲存設定</button></div>
 <div class="section-title"><h2>資料備份與題庫擴充</h2></div><div class="grid cols2"><div class="card"><h3>進度備份</h3><p class="small muted">換裝置、清除瀏覽器或更新版本前請匯出。</p><button id="exportProgress">匯出進度 JSON</button> <button id="importProgressBtn">匯入進度 JSON</button><input id="importProgress" type="file" accept="application/json" hidden><button id="exportWrong">匯出錯題 CSV</button></div><div class="card"><h3>題庫資料</h3><p class="small muted">支援單選 answer:2 或複選 answer:[0,2]。</p><button id="importQuestionsBtn">匯入題庫 JSON</button><input id="importQuestions" type="file" accept="application/json" hidden> <button id="exportQuestions">匯出目前題庫</button><div class="small muted" style="margin-top:8px">內建 ${BASE.length} 題｜自訂 ${custom.length} 題｜合計 ${bank.length} 題</div></div></div>
-<div class="section-title"><h2>題庫說明</h2></div><div class="card"><div class="notice">歷屆真題中的法規、篩檢年齡、政策、統計數字及急救指引可能已更新。系統會標示「時效題」，歷屆作答依原公布答案，現行備考另需複核。</div><div class="small muted" style="margin-top:12px">目前真題 ${baseHistorical().length} 題；自編仿真 ${bank.filter(q=>!q.historical).length} 題。v2.7 答題後直接在選項標示正誤，下方只保留可編輯的學習筆記，支援粗體、底線、字體顏色並自動儲存。</div><div style="margin-top:12px"><button id="reset" class="ghost">清除所有作答進度</button></div></div>`;
- document.getElementById('saveSettings').onclick=()=>{['dailyGoal','sessionSize','examSize','examMinutes'].forEach(k=>state.settings[k]=+document.getElementById(k).value);state.settings.examDate=document.getElementById('examDate').value;state.settings.defaultPool=document.getElementById('defaultPool').value;state.settings.textScale=+document.getElementById('textScale').value;applyTheme();save();alert('已儲存')};document.getElementById('exportProgress').onclick=()=>dl(`健護教甄進度_v2_${today()}.json`,JSON.stringify(state,null,2));document.getElementById('importProgressBtn').onclick=()=>document.getElementById('importProgress').click();document.getElementById('importProgress').onchange=e=>readJson(e.target.files[0],x=>{state=normalizeState(x);save();renderSettings();alert('進度已匯入')});document.getElementById('exportQuestions').onclick=()=>dl(`健護教甄題庫_v2_${today()}.json`,JSON.stringify(bank,null,2));document.getElementById('importQuestionsBtn').onclick=()=>document.getElementById('importQuestions').click();document.getElementById('importQuestions').onchange=e=>readJson(e.target.files[0],arr=>{if(!Array.isArray(arr))throw Error('題庫必須是陣列');const start=custom.length;const cleaned=arr.map((q,i)=>({...q,id:q.id&&!bank.some(x=>x.id===q.id)?q.id:`C${String(start+i+1).padStart(4,'0')}`,options:q.options||[],multi:Array.isArray(q.answer)})).filter(q=>q.question&&q.options.length>=2&&(Number.isInteger(q.answer)||(Array.isArray(q.answer)&&q.answer.length)));custom=[...custom,...cleaned];bank=[...BASE,...custom];save();renderSettings();alert(`已匯入 ${cleaned.length} 題`)});document.getElementById('exportWrong').onclick=()=>{const rows=[['id','年度','來源','領域','知識點','題目','正解','錯誤次數','我的筆記'],...wrongQs().map(q=>[q.id,q.year||'',q.sourceCategory||q.source,q.domain,q.kp,q.question,ansText(q)+' '+ansArr(q).map(i=>q.options[i]).join('；'),rec(q.id).wrong,getNote(q.id)])];dl(`健護教甄錯題本_${today()}.csv`,rows.map(r=>r.map(x=>'"'+String(x).replaceAll('"','""')+'"').join(',')).join('\n'),'text/csv;charset=utf-8')};document.getElementById('reset').onclick=()=>{if(confirm('確定清除所有作答進度？自訂題庫不會刪除。')){state=defaultState();save();renderSettings()}}}
+<div class="section-title"><h2>題庫說明</h2></div><div class="card"><div class="notice">歷屆真題中的法規、篩檢年齡、政策、統計數字及急救指引可能已更新。系統會標示「時效題」，歷屆作答依原公布答案，現行備考另需複核。</div><div class="small muted" style="margin-top:12px">目前真題 ${baseHistorical().length} 題；自編仿真 ${bank.filter(q=>!q.historical).length} 題。v2.9 錯題分為待訂正、待鞏固及已掌握；答對後退出錯題重刷並保留在間隔複習。今日智慧練習可獨立輸入本次題數，不改變每日目標。</div><div style="margin-top:12px"><button id="reset" class="ghost">清除所有作答進度</button></div></div>`;
+ document.getElementById('saveSettings').onclick=()=>{['dailyGoal','sessionSize','examSize','examMinutes'].forEach(k=>state.settings[k]=+document.getElementById(k).value);state.settings.examDate=document.getElementById('examDate').value;state.settings.defaultPool=document.getElementById('defaultPool').value;state.settings.textScale=+document.getElementById('textScale').value;applyTheme();save();alert('已儲存')};document.getElementById('exportProgress').onclick=()=>dl(`健護教甄進度_v2_${today()}.json`,JSON.stringify(state,null,2));document.getElementById('importProgressBtn').onclick=()=>document.getElementById('importProgress').click();document.getElementById('importProgress').onchange=e=>readJson(e.target.files[0],x=>{state=normalizeState(x);save();renderSettings();alert('進度已匯入')});document.getElementById('exportQuestions').onclick=()=>dl(`健護教甄題庫_v2_${today()}.json`,JSON.stringify(bank,null,2));document.getElementById('importQuestionsBtn').onclick=()=>document.getElementById('importQuestions').click();document.getElementById('importQuestions').onchange=e=>readJson(e.target.files[0],arr=>{if(!Array.isArray(arr))throw Error('題庫必須是陣列');const start=custom.length;const cleaned=arr.map((q,i)=>({...q,id:q.id&&!bank.some(x=>x.id===q.id)?q.id:`C${String(start+i+1).padStart(4,'0')}`,options:q.options||[],multi:Array.isArray(q.answer)})).filter(q=>q.question&&q.options.length>=2&&(Number.isInteger(q.answer)||(Array.isArray(q.answer)&&q.answer.length)));custom=[...custom,...cleaned];bank=[...BASE,...custom];save();renderSettings();alert(`已匯入 ${cleaned.length} 題`)});document.getElementById('exportWrong').onclick=()=>{const rows=[['id','年度','來源','領域','知識點','題目','正解','錯誤次數','我的筆記'],...allWrongQs().map(q=>[q.id,q.year||'',q.sourceCategory||q.source,q.domain,q.kp,q.question,ansText(q)+' '+ansArr(q).map(i=>q.options[i]).join('；'),rec(q.id).wrong,getNote(q.id)])];dl(`健護教甄錯題本_${today()}.csv`,rows.map(r=>r.map(x=>'"'+String(x).replaceAll('"','""')+'"').join(',')).join('\n'),'text/csv;charset=utf-8')};document.getElementById('reset').onclick=()=>{if(confirm('確定清除所有作答進度？自訂題庫不會刪除。')){state=defaultState();save();renderSettings()}}}
 function readJson(file,cb){if(!file)return;const fr=new FileReader();fr.onload=()=>{try{cb(JSON.parse(fr.result))}catch(e){alert('匯入失敗：'+e.message)}};fr.readAsText(file)}
 
 renderDashboard();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./service-worker.js?v=2.8.0').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./service-worker.js?v=2.9.0').catch(()=>{});
 })();
